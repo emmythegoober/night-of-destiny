@@ -102,7 +102,7 @@ Q.udn_relation = 15;
 Q.psp_relation = 30;
 Q.pdc_relation = 20;
 Q.ptn_relation = 20;
-Q.prp_relation = 0;
+Q.prp_relation = 15;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
@@ -205,10 +205,10 @@ Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
 // inflation source: http://almanaque.folha.uol.com.br/dinheiro60.htm
-Q.inflation = 50,1;
+Q.inflation = 50.1;
 
 // economic growth - source: https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/td569.pdf
-Q.economic_growth = 6,6;
+Q.economic_growth = 6.6;
 
 // economic expansion timer
 Q.economic_expansion = 0;
