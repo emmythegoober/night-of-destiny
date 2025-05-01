@@ -204,11 +204,11 @@ Q.catholics = 30;
 Q.income = 1600;
 // what about incomes for different classes? rural workers? middle-class workers?
 
-// inflation (in %; 1928: 2.9; 1929: 0; 1930: -5%; 1931: -10%; 1932: -10%) - source: https://en.wikipedia.org/wiki/File:BSPDRWeltkriseEngl.PNG, derived from https://www.destatis.de/DE/Methoden/WISTA-Wirtschaft-und-Statistik/2009/03/rezession-betrachtung-032009.pdf?__blob=publicationFile
-Q.inflation = 2.9;
+// inflation source: http://almanaque.folha.uol.com.br/dinheiro60.htm
+Q.inflation = 50,1;
 
-// economic growth - same source as above, Table 2 (preisbereinigt) - this is also the source for the yearly changes in the great depression.
-Q.economic_growth = 4.4;
+// economic growth - source: https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/td569.pdf
+Q.economic_growth = 6,6;
 
 // economic expansion timer
 Q.economic_expansion = 0;
