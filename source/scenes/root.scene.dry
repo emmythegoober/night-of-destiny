@@ -102,7 +102,7 @@ Q.udn_relation = 15;
 Q.psp_relation = 30;
 Q.pdc_relation = 20;
 Q.ptn_relation = 20;
-Q.prp_relation = 15;
+Q.prp_relation = 10;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
