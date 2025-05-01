@@ -86,13 +86,13 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the PTB
 
-{!<span class="tooltip-text" title="The Varguists are those who follow the teachings of Getúlio Vargas. They are interested in order, respect and respecting the authorities.">Varguists</span>!} strength: [+ varguist_strength : strength +], dissent: [+ varguist_dissenth : dissent +]
+{!<span class="tooltip-text" title="The Varguists, or Bureocratic Getulists, are those who follow the teachings of Getúlio Vargas. They are interested in order, respect and respecting the authorities.">Varguists</span>!} strength: [+ varguist_strength : strength +], dissent: [+ varguist_dissenth : dissent +]
 
-{!<span class="tooltip-text" title="Although called 'Labor', it is mostly composed of the intellectual class of the PTB. They are interested in a social-democratic society, with a slow, gradual transition to socialism.">Labor</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_strength : dissent +]
+{!<span class="tooltip-text" title="Although called 'Labourists', it is actually mostly composed of the intellectual class of the PTB. They are interested in a social-democratic society, with a slow, gradual transition to socialism.">Labourists</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_strength : dissent +]
 
 {!<span class="tooltip-text" title="Reformists are a mix of both Labor petebistas and Varguist petebistas.">Reformists</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
-{!<span class="tooltip-text" title="Brizolists are those who follow the teachings of Leonel Brizola. They are considered the closest faction of the PTB to the communists.">Brizolists</span>!} strength: [+ brizolist_strength : strength +], dissent: [+ brizolist_dissent : dissent +]
+{!<span class="tooltip-text" title="While they remained unaligned with any faction, this group is vitally important for the survival of the PTB.">Unaligned</span>!} strength: [+ unaligned_strength : strength +], dissent: [+ unaligned_dissent : dissent +]
 
 
 

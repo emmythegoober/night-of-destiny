@@ -46,7 +46,7 @@ Q.dissent = 0.05;
 Q.dissent_percent = 5;
 
 // factions
-Q.factions = ['varguist', 'labor', 'reformer', 'brizolist'];
+Q.factions = ['varguist', 'labor', 'reformer', 'unaligned'];
 // should this be normalized to 100%?
 Q.varguist_strength = 35;
 Q.varguist_dissent = 28;
@@ -54,8 +54,8 @@ Q.labor_strength = 10;
 Q.labor_dissent = 40;
 Q.reformist_strength = 45;
 Q.reformist_dissent = 0;
-Q.brizolist_strength = 34;
-Q.brizolist_dissent = 25;
+Q.unaligned_strength = 34;
+Q.unaligned_dissent = 25;
 
 // secret events...
 Q.unions_independent = 0;
@@ -97,7 +97,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.psd_relation = 60;
+Q.psd_relation = 30;
 Q.udn_relation = 15;
 Q.psp_relation = 30;
 Q.pdc_relation = 20;
