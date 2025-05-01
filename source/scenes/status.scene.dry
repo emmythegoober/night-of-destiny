@@ -115,20 +115,16 @@ if (Q.sa_strength) {
 = Army Factions
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Hardliners</span>!} Military Popularity: [+ hd_military_pop +]%
-
-Hardliner Civilian Popularity: [+ hd_civilian_pop +]%
+Civilian Popularity: [+ hd_civilian_pop +]%
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Legalist</span>!} Military Popularity: [+ legalist_military_pop +]%
-
-Legalist Civilian Popularity: [+ legalist_civilian_pop +]%
+Civilian Popularity: [+ legalist_civilian_pop +]%
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Sorbonne</span>!} Military Popularity: [+ sorbonne_military_pop +]%
-
-Sorbonne Civilian Popularity: [+ pracas_civilian_pop +]%
+Civilian Popularity: [+ pracas_civilian_pop +]%
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Praças</span>!} Military Popularity: [+ pracas_military_pop +]%
-
-Praças Civilian Popularity: [+ rb_militancy : militancy +]%
+Civilian Popularity: [+ pracas_civilian_pop +]%
 
 
 @polls
