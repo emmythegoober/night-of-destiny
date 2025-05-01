@@ -98,7 +98,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 
 
-@militaryfactions
+@paramilitaries
 on-arrival: {!
 if (Q.rb_strength) {
     Q.rb_strength_2 = Q.rb_strength.toFixed(1);
@@ -114,7 +114,7 @@ if (Q.sa_strength) {
 }
 !}
 
-= Military
+= Paramilitaries
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
 
