@@ -48,11 +48,11 @@ Q.dissent_percent = 5;
 // factions
 Q.factions = ['varguist', 'labor', 'reformer', 'brizolist'];
 // should this be normalized to 100%?
-Q.varguist_strength = 48;
+Q.varguist_strength = 35;
 Q.varguist_dissent = 28;
 Q.labor_strength = 10;
-Q.labor_dissent = 23;
-Q.reformist_strength = 50;
+Q.labor_dissent = 40;
+Q.reformist_strength = 45;
 Q.reformist_dissent = 0;
 Q.brizolist_strength = 34;
 Q.brizolist_dissent = 25;
