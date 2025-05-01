@@ -21,7 +21,7 @@ on-arrival: {!
 Q.started = 1;
 // time elapsed (in months)
 Q.time = 1;
-Q.year = 1928;
+Q.year = 1963;
 Q.month = 1;
 // how many actions have been taken this month?
 Q.month_actions = 0;
@@ -329,10 +329,11 @@ Q.economic_records = [];
 
 
 // State of the government
-Q.president = "Hindenburg";
+Q.president = "Goulart";
+Q.president_party = "PTB";
 // starting chancellor: Wilhelm Marx
-Q.chancellor = "Marx";
-Q.chancellor_party = 'Z';
+Q.vice_president = "None";
+Q.vice_president_party = 'N/A';
 Q.spd_in_government = 0;
 Q.z_in_government = 1;
 Q.ddp_in_government = 0;
@@ -502,7 +503,7 @@ Q.n_elections = 0;
 Q.no_majority_elections = 0;
 // elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
 Q.in_election = 1;
-Q.next_election_year = 1928;
+Q.next_election_year = 1965;
 Q.next_election_month = 5;
 Q.next_election_time = 5;
 // government affairs timers
