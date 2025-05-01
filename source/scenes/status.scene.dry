@@ -114,33 +114,22 @@ if (Q.sa_strength) {
 
 = Army Factions
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Hardliners</span>!} Military Popularity: [+ hd_military_pop +]%
 
-Reichsbanner Militarization: [+ rb_militancy : militancy +]
+Hardliner Civilian Popularity: [+ hd_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The RFB (Rotfrontkämpferbund) is a communist group associated with the KPD.">RFB</span>!} Strength: [+ rfb_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Legalist</span>!} Military Popularity: [+ legalist_military_pop +]%
 
-RFB Militarization: [+ rfb_militancy : militancy +]
+Legalist Civilian Popularity: [+ legalist_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The Stahlhelm is a right-wing organization of war veterans associated with the DNVP.">Stahlhelm</span>!} Strength: [+ sh_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Sorbonne</span>!} Military Popularity: [+ sorbonne_military_pop +]%
 
-Stahlhelm Militarization: [+ sh_militancy : militancy +]
+Sorbonne Civilian Popularity: [+ pracas_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The SA (Sturmabteilung) is the Nazi paramilitary.">SA</span>!} Strength: [+ sa_strength_2 +] thousand
+{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Praças</span>!} Military Popularity: [+ pracas_military_pop +]%
 
-SA Militarization: [+ sa_militancy : militancy +]
+Praças Civilian Popularity: [+ rb_militancy : militancy +]%
 
-= Official military/paramilitaries
-
-Reichswehr: [+ reichswehr_strength +] thousand troops.
-
-Reichswehr Loyalty: [+ reichswehr_loyalty : loyalty +]
-
-Prussian police: [+ prussian_police_strength +] thousand members.
-
-Prussian police loyalty: [+ prussian_police_loyalty : loyalty +]
-
-[? if spd_in_government : Interior police loyalty: [+ interior_police_loyalty : loyalty +] ?]
 
 @polls
 on-arrival: {!
