@@ -86,11 +86,11 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Internal Factions of the PTB
 
-{!<span class="tooltip-text" title="The Getulists, or Bureocratic Getulists, are those who follow the teachings of Getúlio Vargas. They are centrists, interested in order and respecting the authorities.">Getulists</span>!} strength: [+ varguist_strength : strength +], dissent: [+ varguist_dissenth : dissent +]
+{!<span class="tooltip-text" title="The Getulists, or Bureocratic Getulists, are the bureaucrats that handle labor relations. They are centrists, interested in order and respecting the authorities.">Getulists</span>!} strength: [+ varguist_strength : strength +], dissent: [+ varguist_dissenth : dissent +]
 
 {!<span class="tooltip-text" title="Although called 'Labourists', it is actually mostly composed of the intellectual class of the PTB. They are interested in a social-democratic society, with a slow, gradual transition to socialism.">Labourists</span>!} strength: [+ labor_strength : strength +], dissent: [+ labor_strength : dissent +]
 
-{!<span class="tooltip-text" title="Reformists are a mix of both Labor petebistas and Varguist petebistas.">Reformists</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
+{!<span class="tooltip-text" title="Reformists are a more nationalist faction, with a radical approach towards the Reformas de Base">Reformists</span>!} strength: [+ reformist_strength : strength +], dissent: [+ reformist_dissent : dissent +]
 
 {!<span class="tooltip-text" title="While they remained unaligned with any faction, this group is vitally important for the survival of the PTB.">Unaligned</span>!} strength: [+ unaligned_strength : strength +], dissent: [+ unaligned_dissent : dissent +]
 
