@@ -74,17 +74,17 @@ Economic growth: [+ economic_growth_2 +]%
 
 = Inter-party Relations
 
-{!<span class="tooltip-text" title="Social Democratic Party">PSD</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Social Democratic Party">PSD</span>!}: [+ psd_relation : relationships +]
 
-{!<span class="tooltip-text" title="National Democratic Union">UDN</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="National Democratic Union">UDN</span>!}: [+ udn_relation : relationships +]
 
-{!<span class="tooltip-text" title="Social Progressive Party">PSP</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Social Progressive Party">PSP</span>!}: [+ psp_relation : relationships +]
 
-{!<span class="tooltip-text" title="Christian Democratic Party">PDC</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Christian Democratic Party">PDC</span>!}: [+ pdc_relation : relationships +]
 
-{!<span class="tooltip-text" title="National Labor Party">PTN</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="National Labor Party">PTN</span>!}: [+ ptn_relation : relationships +]
 
-{!<span class="tooltip-text" title="Popular Representation Party (Integralists)">PRP</span>!}: [+ z_relation : relationships +]
+{!<span class="tooltip-text" title="Popular Representation Party (Integralists)">PRP</span>!}: [+ prp_relation : relationships +]
 
 = Internal Factions of the PTB
 
@@ -114,7 +114,7 @@ if (Q.sa_strength) {
 }
 !}
 
-= Paramilitaries
+= Army Factions
 
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Reichsbanner</span>!} Strength: [+ rb_strength_2 +] thousand
 

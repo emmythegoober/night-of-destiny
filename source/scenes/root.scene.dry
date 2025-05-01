@@ -97,13 +97,12 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.z_relation = 50;
-Q.kpd_relation = 25;
-Q.ddp_relation = 60;
-Q.dvp_relation = 35;
-// DNVP and NSDAP are invariably hostile
-Q.DNVP_relation = 10;
-Q.NSDAP_relation = 0;
+Q.psd_relation = 60;
+Q.udn_relation = 15;
+Q.psp_relation = 30;
+Q.pdc_relation = 20;
+Q.ptn_relation = 20;
+Q.prp_relation = 0;
 
 Q.kpd_leader = "Thälmann";
 // alternative is the Conciliators as party leader
