@@ -1,11 +1,11 @@
-title: Otto Wels
+title: San Tiago Dantas
 is-pinned-card: true
 tags: advisor, centrist
-card-image: img/portraits/WelsOtto.jpg
-view-if: wels_advisor = 1
+card-image: img/portraits/SanTiagoDantas.jpg
+view-if: santiago_advisor = 1
 new-page: true
 
-= Otto Wels
+= San Tiago Dantas
 
 Wels is the long-time chairman of the SPD. He is a gifted organizer and a member of the centrist faction.
 
