@@ -2,7 +2,7 @@ title: Amaury Kruel
 is-pinned-card: true
 tags: advisor, centrist, military
 card-image: img/portraits/AmauryKruel.jpg
-view-if: hilferding_advisor = 1
+view-if: kruel_advisor = 1
 new-page: true
 
 = Amaury Kruel
