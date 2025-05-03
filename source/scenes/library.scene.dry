@@ -235,7 +235,7 @@ Current relations: [+ nsdap_relation : relationships +]
 
 **Other parties** - there is a multitude of small, mostly conservative parties, such as the Economic Party of the German Middle Class, the Farmer's Party, the Agricultural League, and others. Their political position usually lies between the DVP and DNVP. 
 
-@paramilitaries
+@military
 on-arrival: {!
 Q.rb_strength = Math.round(Q.rb_strength);
 Q.sh_strength = Math.round(Q.sh_strength);
