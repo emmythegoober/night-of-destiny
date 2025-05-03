@@ -16,7 +16,7 @@ if (Q.economic_growth) {
 
 = Status
 
-[? if (Q.time) == 1 : 7 January 1963 ?] [+ month : month +] [+ year +] 
+[? if (Q.time) = '1' : 7 January 1963 ?] [+ month : month +] [+ year +] 
 
 Resources available: [+ resources +]
 
