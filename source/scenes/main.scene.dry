@@ -51,7 +51,7 @@ max-cards: 4
 
 @party
 title: Party Affairs
-card-image: img/party_poster.png
+card-image: img/party_poster.jpgg
 is-deck: true
 
 - #party_affairs
