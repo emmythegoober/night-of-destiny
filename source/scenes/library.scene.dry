@@ -23,13 +23,11 @@ Herein contains relevant information about the government and politics of the Ge
 @government
 go-to: menu
 
-The German Republic, called by some of our detractors as the "Weimar Republic", is a parliamentary republic with a somewhat weak president and a strong parliament, called the Reichstag. The Reichstag is responsible for governing, while the President has a largely ceremonial role but also has some important governing responsibilities.
+The United States of Brazil finds itself on its Fourth Constitution, leading many to call this period as the "Fourth Republic," or, by some critics, as the "Populist Republic." It is a presidential republic with a strong executive and a fairly strong legislative (which is divided into two chamber: the Senado and the Câmara dos Deputados.) The President takes on the role of governing, while the Congresso takes on the role of writing laws and constitutional amendments. 
 
-The Reichstag is elected based on a proportional representation system, giving parties seats roughly proportional to their vote share in each electoral district. The Reichstag then elects the Chancellor and the cabinet by a majority vote, who are responsible for government. A majority vote-of-no-confidence can remove the current government.
+The president and the vice-president are elected in different races in a plurality system, which might lead to situations were the president's party is the complete opposite to that of the vice-president. Presidents can assemble their own cabinet without any need for congressional approval, they also have the power to create as many ministries as they want. The president can be removed, legally, via resignation, impeachment or death. Congress is also elected in a plurality system.
 
-The President is elected by a national direct vote, in two rounds. The second round is used if the first round does not result in a majority for one candidate; the candidate who receives a plurality in the second round becomes president (there is no obligation for weaker candidates to drop out). The role of the president is mostly to represent Germany, but he also has some crucial governing powers. The president and chancellor can together use emergency decrees to govern, bypassing the Reichstag. The president can also appoint or remove a chancellor when a parliamentary majority is unable to be established, and can thus influence the formation of a government.
-
-Germany is divided into a number of states, each of which have their own governments with some responsibilities. By far the largest and most important state is Prussia.
+Brazil is divided into a number of states, each of which have their own governments with some responsibilities. The most important state is São Paulo.
 
 @brazil_timeline
 go-to: menu
@@ -243,7 +241,7 @@ Q.sa_strength = Math.round(Q.sa_strength);
 !}
 go-to: menu
 
-**Paramilitary groups:**
+**Military Factions:**
 
 **Reichsbanner Schwarz-Rot-Gold**: The Reichsbanner is an organization affiliated with all of the democratic parties - the SPD, Z, and DDP, but primarily with the SPD. Historically, this has been an unarmed organization.
 
