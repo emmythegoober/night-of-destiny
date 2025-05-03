@@ -51,21 +51,21 @@ max-cards: 4
 
 @party
 title: Party Affairs
-card-image: img/Vorwaerts_nr_1.png
+card-image: img/party_poster.png
 is-deck: true
 
 - #party_affairs
 
 @govt
 title: Government Affairs
-card-image: img/reichstag_2.jpg
+card-image: img/brasilia.jpg
 is-deck: true
 
 - #govt_affairs
 
 @economy
 title: Economic Affairs
-card-image: img/brasilia.jpg
+card-image: img/operarios.jpg
 is-deck: true
 
 - #economic_affairs
