@@ -11,6 +11,7 @@ view-if: tancredo_advisor = 1
 Tancredo Neves is the current leader for our government in the Chamber of Deputies. Although a member of the PSD, Tancredo has proved himself as a loyal member of our government. He was the first prime minister during the parliamentary era.
 
 - @psdtalks
+- @clear_agenda
 - @root: Return to main
 
 @psdtalks
@@ -22,3 +23,18 @@ on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if ptb_in_presidenc
 
 We have improved our relations with the PSD and reduced tensions with them.
 
+@clear_agenda
+title: Clear the agenda
+subtitle: Removes all cards from the hand.
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: {!
+Q.advisor_action_timer = 6;
+if (Q.difficulty >= 0) {
+    window.dendryUI.dendryEngine.state.currentHands['main'] = [];
+} else {
+    window.dendryUI.dendryEngine.state.currentHands['main.main_easy'] = [];
+}
+!}
+
+All items from our agenda have been cleared.
