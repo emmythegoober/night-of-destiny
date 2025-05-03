@@ -9,13 +9,13 @@ Herein contains relevant information about the government and politics of the Ge
 
 @menu
 
-- @government: Germany's system of government
-- @weimar_timeline: Timeline of the Weimar Republic before 1928
+- @government: Brazil's system of government
+- @brazil_timeline: Timeline of the Fourth Republic before 1928
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
 - @public_opinion: Public opinion (and projected election results)
-- @paramilitaries: Paramilitary groups
+- @military: Military factions
 - @factions: Internal factions
 - @figures: Figures and charts
 - @backSpecialScene: Exit library.
@@ -34,7 +34,7 @@ Germany is divided into a number of states, each of which have their own governm
 @weimar_timeline
 go-to: menu
 
-= Timeline of the SPD and the Republic (until 1928)
+= Timeline of the PTB and the Fourth Republic (until 1963)
 
 **1875**: The SPD is formed as a merger of the General German Workers' Association, founded by Ferdinand Lassalle, and the Social Democratic Workers' Party of Germany, led by Wilhelm Liebknecht and August Bebel. Eventually, the SPD grows to become the largest party in the German Empire.
 
