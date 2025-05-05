@@ -50,11 +50,17 @@ During a funeral, General Jurandir Bizarria Mamede declares that the two winning
 
 Luz also refuses to punish Mamede, prompting Lott to resign in protest. Soon after, Lott learns of a plot by Luz to orchestrate a coup to prevent Kubitschek and Goulart from taking office. In response, Lott launches a counter-coup. Luz is impeached, and Nereu Ramos, President of the Senate, becomes acting president.
 
+Jânio Quadros becomes governor of São Paulo.
+
 **1956**: Juscelino Kubitschek and João Goulart are inaugurated. Right after being sworn in, JK starts to enact his developmentalist policies by creating the Conselho de Desenvolvimento, which would soon establish the Plano de Metas, a plan to improve Brazilian infrastructure and industry. A plan to change the capital from Rio de Janeiro to a new, planned city in Goiás is approved by Congress and JK.
 
 **1957**: A new capital, named Brasília, begins construction.
 
+**1960**: Brasília is inaugurated. It's an election year; the candidates are Henrique Teixeira Lott of the PSD (in coalition with the PTB), Jânio Quadros of the PTN (in coalition with the UDN), and Adhemar de Barros of the PSP. Lott quickly proves himself to be an uncharismatic candidate—he wasn't a politician, after all. Quadros sweeps the election, with Goulart remaining vice president. This duo was called the "Jan-Jan" ticket (for Jânio and Jango).
 
+**1961**: Quadros is inaugurated as president but resigns after just seven months. His resignation letter claims that "occult forces" made him leave the presidency. Goulart, who was on a diplomatic visit to Communist China, is not immediately inaugurated. This delay allows the military ministers to veto his presidency and install the President of the Câmara dos Deputados, Ranieri Mazzilli, as interim president. Leonel Brizola launches the Campanha da Legalidade, vowing to defend the constitutional line of succession. Tancredo Neves meets with Goulart in Paris to discuss a possible parliamentary system. After hours of discussion, Jango agrees. Goulart returns to Brazil, and Neves is appointed Prime Minister.
+
+**6 January 1963**: A referendum is held to decide whether Goulart should regain full presidential powers. The result is overwhelmingly in favor. Parliamentarism is abolished.
 
 @curr_gov
 go-to: cabinet if ptb_in_presidency ; menu if not ptb_in_presidency
