@@ -126,7 +126,7 @@ Civilian Popularity: [+ pracas_civilian_pop +]%
 {!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Praças</span>!} Military Popularity: [+ pracas_military_pop +]%;
 Civilian Popularity: [+ pracas_civilian_pop +]%
 
-Military Loyalty: [+ loyalty +]
+Military Loyalty: [+ military_loyalty : loyalty +]
 
 @polls
 on-arrival: {!
