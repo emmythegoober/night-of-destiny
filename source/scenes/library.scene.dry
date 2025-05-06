@@ -17,7 +17,7 @@ Herein contains relevant information about the government and politics of the Un
 - @public_opinion: Public opinion (and projected election results)
 - @military: Military factions
 - @factions: Internal factions
-- @figures: Figures and charts
+- @figures: Chamber of Deputies details
 - @backSpecialScene: Exit library.
 
 @government
