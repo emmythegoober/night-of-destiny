@@ -328,71 +328,55 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 @figures
 title: Figures and Charts
 go-to: menu
-on-arrival: z_minus_bvp_r = z_r - 3;
 on-display: {!
-data = [
-    {
-        "id": "kpd",
-        "legend": "KPD",
-        "name": "KPD",
-        "seats": Q.kpd_r*5,
-    }];
-if (Q.sapd_formed && Q.sapd_r) {
-    data.push({
-            "id": "sapd",
-            "legend": "SAPD",
-            "name": "SAPD",
-            "seats": Math.round(Q.sapd_r*5),
-            });
-}
 data = data.concat([
     {
-        "id": "spd",
+        "id": "ptb",
         "legend": "SPD",
         "name": "SPD",
-        "seats": Q.spd_r*5,
+        "seats": Q.ptb_cd*5,
     },
     {
-        "id": "ddp",
+        "id": "psd",
         "legend": "DDP",
         "name": "DDP",
-        "seats": Q.ddp_r*5,
+        "seats": Q.psd_cd*5,
     },
     {
-        "id": "z",
+        "id": "udn",
         "legend": "Center",
         "name": "Center",
-        "seats": (Q.z_r - 3)*5,
+        "seats": Q.udn_cd*5,
     },
     {
-        "id": "bvp",
+        "id": "psp",
         "legend": "BVP",
         "name": "BVP",
-        "seats": 3*5,
+        "seats": Q.psp_cd*5,
     },
     {
-        "id": "dvp",
+        "id": "ptn",
         "legend": "DVP",
         "name": "DVP",
-        "seats": Q.dvp_r*5,
+        "seats": Q.ptn_cd*5,
+    },
+    {
+        "id": "pdc",
+        "legend": "Other",
+        "name": "Other",
+        "seats": Q.pdc_cd*5,
+    },
+    {
+        "id": "prp",
+        "legend": "DNVP",
+        "name": "DNVP",
+        "seats": Q.prp_cd*5,
     },
     {
         "id": "other",
         "legend": "Other",
         "name": "Other",
-        "seats": Q.other_r*5,
-    },
-    {
-        "id": "dnvp",
-        "legend": "DNVP",
-        "name": "DNVP",
-        "seats": Q.dnvp_r*5,
-    },
-    {
-        "id": "nsdap",
-        "legend": "NSDAP",
-        "name": "NSDAP",
-        "seats": Q.nsdap_r*5,
+        "seats": Q.other_cd*5,
     },
 ]);
 if (d3 && window) {
