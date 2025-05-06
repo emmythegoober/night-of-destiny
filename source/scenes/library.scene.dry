@@ -343,12 +343,6 @@ data = [
         "seats": Math.round(Q.psd_cd*4.09),
     },
     {
-        "id": "udn",
-        "legend": "UDN",
-        "name": "UDN",
-        "seats": Math.round(Q.udn_cd*4.09),
-    },
-    {
         "id": "psp",
         "legend": "PSP",
         "name": "PSP",
@@ -365,6 +359,12 @@ data = [
         "legend": "PDC",
         "name": "PDC",
         "seats": Math.round(Q.pdc_cd*4.09),
+    },
+    {
+        "id": "udn",
+        "legend": "UDN",
+        "name": "UDN",
+        "seats": Math.round(Q.udn_cd*4.09),
     },
     {
         "id": "prp",
@@ -428,7 +428,7 @@ if (d3 && window) {
 }
 !}
 
-= Reichstag composition
+= Câmara dos Deputados composition
 
 {!<svg id="camara" style="width: 500px; height: 250px;"> </svg>!}
 
