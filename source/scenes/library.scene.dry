@@ -430,7 +430,7 @@ if (d3 && window) {
 
 = Reichstag composition
 
-{!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
+{!<svg id="camara" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
 {!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **PTB:** {!</td><td>!} **[+ ptb_cd +]%** {!</td></tr>!}
