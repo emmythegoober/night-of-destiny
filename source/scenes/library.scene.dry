@@ -332,44 +332,44 @@ on-display: {!
 data = data.concat([
     {
         "id": "ptb",
-        "legend": "SPD",
-        "name": "SPD",
+        "legend": "PTB",
+        "name": "PTB",
         "seats": Q.ptb_cd*5,
     },
     {
         "id": "psd",
-        "legend": "DDP",
-        "name": "DDP",
+        "legend": "PSD",
+        "name": "PSD",
         "seats": Q.psd_cd*5,
     },
     {
         "id": "udn",
-        "legend": "Center",
-        "name": "Center",
+        "legend": "UDN",
+        "name": "UDN",
         "seats": Q.udn_cd*5,
     },
     {
         "id": "psp",
-        "legend": "BVP",
-        "name": "BVP",
+        "legend": "PSP",
+        "name": "PSP",
         "seats": Q.psp_cd*5,
     },
     {
         "id": "ptn",
-        "legend": "DVP",
-        "name": "DVP",
+        "legend": "PTN",
+        "name": "PTN",
         "seats": Q.ptn_cd*5,
     },
     {
         "id": "pdc",
-        "legend": "Other",
-        "name": "Other",
+        "legend": "PDC",
+        "name": "PDC",
         "seats": Q.pdc_cd*5,
     },
     {
         "id": "prp",
-        "legend": "DNVP",
-        "name": "DNVP",
+        "legend": "PRP",
+        "name": "PRP",
         "seats": Q.prp_cd*5,
     },
     {
@@ -387,18 +387,18 @@ if (d3 && window) {
     if (screenWidth < width - 50) {
         width = screenWidth - 50;
         height = width;
-        document.getElementById("reichstag").style.height = screenWidth/2 + "px";
+        document.getElementById("camara").style.height = screenWidth/2 + "px";
     }
     var parliament = d3.parliament();
     parliament.width(width).height(height).innerRadiusCoef(0.4);
     parliament.enter.fromCenter(true).smallToBig(true);
     parliament.exit.toCenter(false).bigToSmall(true);
-    d3.select("#reichstag").datum(data).call(parliament);
+    d3.select("#camara").datum(data).call(parliament);
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'ddp': Q.ddp_name, 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+            {'ptb': '#E3000F', 'psd': '#8B0000', 'udn': '#DCCA4A', 'psp': '#000', 'pdc': '#D5AC27', 'ptn': '#3f7bc1', 'prp': '#954B00', 'other': '#a0a0a0'},
+            {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -410,8 +410,8 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'spd': '#E3000F', 'kpd': '#8B0000', 'ddp': '#DCCA4A', 'z': '#000', 'dvp': '#D5AC27', 'dnvp': '#3f7bc1', 'nsdap': '#954B00', 'other': '#a0a0a0', 'sapd': '#c40000'},
-            {'spd': 'SPD', 'kpd': 'KPD', 'ddp': Q.ddp_name, 'z': 'Z + BVP', 'dvp': 'DVP', 'dnvp': 'DNVP', 'nsdap': 'NSDAP', 'other': 'Others', 'sapd': 'SAPD'});
+             {'ptb': '#E3000F', 'psd': '#8B0000', 'udn': '#DCCA4A', 'psp': '#000', 'pdc': '#D5AC27', 'ptn': '#3f7bc1', 'prp': '#954B00', 'other': '#a0a0a0'},
+            {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
     }
@@ -433,9 +433,7 @@ if (d3 && window) {
 {!<svg id="reichstag" style="width: 500px; height: 250px;"> </svg>!}
 
 {!<table>!}
-{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **SPD:** {!</td><td>!} **[+ spd_r +]%** {!</td></tr>!}
-
-[? if sapd_formed : {!<tr><td><div class="box" style='background-color:#C40000'> </div></td> <td> !}SAPD: {!</td><td>!} [+ sapd_r +]% {!</td></tr>!} ?]
+{!<tr><td><div class="box" style='background-color:#E3000F; outline: 2px; outline-style: solid;'> </div></td><td>!} **PTB:** {!</td><td>!} **[+ ptb_cd +]%** {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#8B0000'> </div></td> <td>!}KPD: {!</td><td>!} [+ kpd_r +]% {!</td></tr>!}
 
