@@ -326,7 +326,7 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 
 
 @figures
-title: Figures and Charts
+title: Chamber of Deputies information
 go-to: menu
 on-display: {!
 data = [
@@ -451,19 +451,4 @@ if (d3 && window) {
 
 {!</table>!}
 
-= Election history
 
-[? if year = 1965 and month < 10  : No new elections yet. ?]
-
-{!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
-
-= Party support history
-
-[? if historical_mode: Not available in historical mode. ?]
-
-{!<svg id="party_support_history" style="width: 500px; height: 400px;"> </svg>!}
-
-= Economic history
-
-{!<svg id="economic_history" style="width: 500px; height: 300px;"> </svg>!}
-# TODO: maybe add textual histories too? some accessibility stuff as well...
