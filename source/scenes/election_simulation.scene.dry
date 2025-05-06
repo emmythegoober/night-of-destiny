@@ -18,7 +18,7 @@ Q.unemployed = 8.6;
 Q.catholics = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -91,7 +91,7 @@ Q.unemployed = 20;
 Q.catholics = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -173,7 +173,7 @@ Q.unemployed = 33;
 Q.catholics = 30;
 
 Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
-Q.parties = ['spd', 'kpd', 'z', 'ddp', 'dvp', 'dnvp', 'nsdap', 'other'];
+Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
@@ -231,14 +231,14 @@ Q.catholics_dnvp = 5;
 Q.catholics_nsdap = 10;
 Q.catholics_other = 5;
 
-Q.spd_r = 25;
-Q.kpd_r = 10;
-Q.z_r = 15;
-Q.ddp_r = 10;
-Q.dvp_r = 10;
-Q.dnvp_r = 14;
-Q.nsdap_r = 10;
-Q.other_r = 5;
+Q.ptb_cd = 25;
+Q.psd_cd = 30;
+Q.udn_cd = 22;
+Q.psp_cd = 5;
+Q.pdc_cd = 4;
+Q.ptn_cd = 2;
+Q.prp_cd = 1;
+Q.other_cd = 11;
 !}
 go-to: election_algorithm
 set-jump: post_election
@@ -246,13 +246,13 @@ set-jump: post_election
 @post_election
 on-arrival: {!
 // set congress proportion to votes
-Q.spd_r = Q.spd_votes;
-Q.z_r = Q.z_votes;
-Q.kpd_r = Q.kpd_votes;
-Q.ddp_r = Q.ddp_votes;
-Q.dvp_r = Q.dvp_votes;
-Q.dnvp_r = Q.dnvp_votes;
-Q.nsdap_r = Q.nsdap_votes;
+Q.ptb_cd = Q.ptb_votes;
+Q.psd_cd = Q.psd_votes;
+Q.udn_cd = Q.udn_votes;
+Q.psp_cd = Q.psp_votes;
+Q.pdc_cd = Q.pdc_votes;
+Q.ptn_cd = Q.ptn_votes;
+Q.prp_cd = Q.prp_votes;
 Q.other_r = Q.other_votes;
 
 // The largest party can only be the NSDAP or the SPD.
@@ -283,29 +283,21 @@ The electoral system is essentially proportional, with the proportion of Reichst
  
 **Election results:**
 
-# 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_r +]
+PTB: [+ ptb_cd +]
 
-# 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_r +]
+PSD: [+ psd_cd +]
 
-# 1928: 10, 1930: 13
-KPD: [+ kpd_r +]
+UDN: [+ udn_cd +]
 
-# 1928: 5, 1930: 4 (as DstP)
-DDP: [+ ddp_r +]
+PSP: [+ psp_cd +]
 
-# 1928: 9, 1930: 5
-DVP: [+ dvp_r +]
+PDC: [+ pdc_cd +]
 
-# 1928: 14, 1930: 7
-DNVP: [+ dnvp_r +]
+PTN: [+ ptn_cd +]
 
-# 1928: 3, 1930: 18
-NSDAP: [+ nsdap_r +]
+PRP: [+ prp_cd +]
 
-# 1928: 9, 1930: 10
-Other: [+ other_r +]
+Others: [+ other_cd +]
 
 **Potential coalitions:**
 
