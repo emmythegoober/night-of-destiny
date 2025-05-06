@@ -329,7 +329,7 @@ Dissent: [+ neorevisionist_dissent : dissent +]
 title: Figures and Charts
 go-to: menu
 on-display: {!
-data = data.concat([
+data = [
     {
         "id": "ptb",
         "legend": "PTB",
@@ -378,7 +378,7 @@ data = data.concat([
         "name": "Other",
         "seats": Q.other_cd*5,
     },
-]);
+];
 if (d3 && window) {
     // get screen width
     var width = 500;
@@ -397,7 +397,7 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'ptb': '#E3000F', 'psd': '#8B0000', 'udn': '#DCCA4A', 'psp': '#000', 'pdc': '#D5AC27', 'ptn': '#3f7bc1', 'prp': '#954B00', 'other': '#a0a0a0'},
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#003049', 'psp': '#450920', 'pdc': '#ffa69e', 'ptn': '#000', 'prp': '#344e41', 'other': '#909090'},
             {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
     lines.width(width).height(400);
     //var svg = lines(Q.election_records);
@@ -410,7 +410,7 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-             {'ptb': '#E3000F', 'psd': '#8B0000', 'udn': '#DCCA4A', 'psp': '#000', 'pdc': '#D5AC27', 'ptn': '#3f7bc1', 'prp': '#954B00', 'other': '#a0a0a0'},
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#003049', 'psp': '#450920', 'pdc': '#ffa69e', 'ptn': '#000', 'prp': '#344e41', 'other': '#909090'},
             {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
@@ -453,7 +453,7 @@ if (d3 && window) {
 
 = Election history
 
-[? if year = 1928 and month < 5 : No new elections yet. ?]
+[? if year = 1965 and month < 10  : No new elections yet. ?]
 
 {!<svg id="election_history" style="width: 500px; height: 400px;"> </svg>!}
 
