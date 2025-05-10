@@ -122,27 +122,28 @@ Q.spd_prussia = 1;
 Q.prussian_government = "SPD";
 
 // Military factions (in % of support)
+// do i make this add to 100%?
 
-Q.hd_military_pop = 25;
-Q.hd_civilian_pop = 15;
-Q.sorbonne_military_pop = 25;
-Q.sorbonne_civilian_pop = 26;
-Q.legalist_military_pop = 25;
-Q.legalist_civilian_pop = 28;
-Q.pracas_military_pop = 25;
-Q.pracas_civilian_pop = 15;
+Q.hd_military_pop = 32;
+Q.hd_civilian_pop = 10;
+Q.sorbonne_military_pop = 45;
+Q.sorbonne_civilian_pop = 30;
+Q.legalist_military_pop = 40;
+Q.legalist_civilian_pop = 45;
+Q.pracas_military_pop = 5;
+Q.pracas_civilian_pop = 20;
 
 
 // The state of the country
 
 // popular opinion
 // national ideology - on a binary scale
-// nationalism vs internationalism or pacifism or non-nationalism
-Q.nationalism = 60;
+// anti-coup vs pro-coup
+Q.coup = 12;
 // socialism vs capitalism
-Q.socialism = 40;
-// pro-republic vs anti-republic
-Q.pro_republic = 59;
+Q.socialism = 28;
+// pro-government vs anti-government
+Q.pro_government = 59;
 
 Q.emergency_rule = 0;
 
