@@ -97,7 +97,7 @@ Q.moderate_plan_adopted = 0;
 // organizations
 
 // inter-party relations
-Q.psd_relation = 30;
+Q.psd_relation = 40;
 Q.udn_relation = 15;
 Q.psp_relation = 30;
 Q.pdc_relation = 20;
