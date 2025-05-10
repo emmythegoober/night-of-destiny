@@ -255,7 +255,7 @@ Military Popularity: [+ pracas_military_pop +]%
 
 Civilian Popularity: [+ pracas_civilian_pop +]%
 
-**General military Loyalt**: [+ military_loyalty : loyalty +]
+**General military loyalty**: [+ military_loyalty : loyalty +]
 
 
 @factions

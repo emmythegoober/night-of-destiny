@@ -301,7 +301,7 @@ Q.party_support_records = [];
 Q.economic_records = [];
 
 // state of the military
-Q.military_loyalty = 0.32
+Q.military_loyalty = 0.45
 
 // State of the government
 Q.president = "Goulart";
