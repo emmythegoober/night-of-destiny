@@ -131,8 +131,8 @@ go-to: menu
 
 @public_opinion
 on-arrival: {!
-Q.pro_republic_disp = Math.round(Q.pro_republic);
-Q.nationalism_disp = Math.round(Q.nationalism);
+Q.coup_disp = Math.round(Q.coup);
+Q.pro_government_disp = Math.round(Q.pro_government);
 Q.socialism_disp = Math.round(Q.socialism);
 !}
 view-if: (not historical_mode) or game_over
