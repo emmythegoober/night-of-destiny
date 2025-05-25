@@ -101,7 +101,7 @@ view-if: n_advisors < 3
 - #left_advisor
 - #brizolist_advisor
 
-@labor
+@labourists
 view-if: n_advisors < 3
 
 - #labor_advisor
