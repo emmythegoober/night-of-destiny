@@ -58,7 +58,7 @@ on-arrival: santiago_advisor = 0; labor_dissent += 5; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
-Tancredo has been removed as an advisor. The Labourists disapprove of this choice.
+San TIago has been removed as an advisor. The Labourists disapprove of this choice.
 
 
 
