@@ -76,16 +76,16 @@ tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_adv
 frequency: 1
 
 
-- @centrist: Add Centrists
-- @left: Add Leftists
+- @getulist: Add Getulists
+- @brizolist: Add Brizolists
 - @reformist: Add Reformists
-- @labor: Add Labor
+- @labourists: Add Labourists
 - @neorev: Add Neorevisionists
-- @nonfactional: Add non-factional advisors
+- @nonfactional: Add Unaligned advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
-@centrist
+@getulist
 view-if: n_advisors < 3
 
 - #center_advisor
@@ -95,10 +95,11 @@ view-if: n_advisors < 3
 
 - #reformist_advisor
 
-@left
+@brizolist
 view-if: n_advisors < 3
 
 - #left_advisor
+- #brizolist_advisor
 
 @labor
 view-if: n_advisors < 3
@@ -114,6 +115,18 @@ view-if: neorevisionism > 0 and n_advisors < 3
 view-if: n_advisors < 3
 
 - #nonfactional_advisor
+
+@add_brizola
+title: Leonel Brizola
+subtitle: Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He is also your brother-in-law.
+is-card: true
+card-image: img/portraits/LeonelBrizola.png
+tags: brizolist_advisor
+view-if: brizola_advisor = 0 and n_advisors < 3
+on-arrival: brizola_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Leonel Brizola is now an advisor. 
 
 @add_hilferding
 title: Rudolf Hilferding

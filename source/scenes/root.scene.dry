@@ -504,6 +504,9 @@ Q.tancredo_advisor = 1; // Tancredo Neves
 Q.crispien_advisor = 0; // Arthur Crispien
 Q.kruel_advisor = 1; // Amaury Kruel
 
+// brizolist advisors
+Q.brizola_advisor = 0; // Leonel Brizola
+
 // left advisors
 Q.sender_advisor = 0; // Toni Sender
 Q.levi_advisor = 0; // Paul Levi
