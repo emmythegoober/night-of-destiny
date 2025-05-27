@@ -148,7 +148,7 @@ go-to: advisor_menu
 
 Tancredo Neves is now an advisor. 
 
-@add_brizola
+@add_kruel
 title: Amaury Kruel
 subtitle: Amaury Kruel is your Minister of War and one of the former members of the Legality Campaign that allowed to gain power. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
@@ -172,7 +172,7 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-@add_santiago
+@add_biden
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
@@ -184,7 +184,7 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-@add_santiago
+@add_biden
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
