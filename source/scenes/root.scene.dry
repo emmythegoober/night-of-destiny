@@ -586,7 +586,7 @@ this.state.disableSaves = true;
 go-to: 1963_main
 
 @1963_main 
-audio: shuffle music/SeEuFosse.mp3 music/CartaDeGetulio.mp3 music/1960/AiGege.mp3 music/1960/IdealDoPetebista.mp3 music/1960/LiderDoTrabalhador.mp3 music/1960/RetratoDoBelho.mp3 music/1960/RodaViva.mp3 music/1960/VamosJangar.mp3 
+audio: shuffle music/1960/SeEuFosse.mp3 music/1960/CartaDeGetulio.mp3 music/1960/AiGege.mp3 music/1960/IdealDoPetebista.mp3 music/1960/LiderDoTrabalhador.mp3 music/1960/RetratoDoBelho.mp3 music/1960/RodaViva.mp3 music/1960/VamosJangar.mp3 
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
