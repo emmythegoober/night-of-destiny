@@ -592,7 +592,7 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
 = 7 January 1963
 
- {! <img src="img/flavor/BannerImageStart.jpg"> !}
+ {! <center><img src="img/flavor/BannerImageStart.jpg"></center> !}
 
 The United States of Brazil is a land of contrasts. It has massive developments and a booming economy, but it also has poverty, suffering and hunger. In Brasília, the national capital, this contrast can be seen everywhere. In itself, Brasilia is an experiment—it asks if Brazil create and manage a whole new city in the middle of nowhere. It was created by the minds of architects and ambitious politicians, but also by the hands of Northeastern workers, who after finishing its construction were kicked out of the "Plano Piloto" to live in the capital's satellite cities.
 
