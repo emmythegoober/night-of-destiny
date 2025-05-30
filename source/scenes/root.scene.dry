@@ -586,7 +586,7 @@ this.state.disableSaves = true;
 go-to: 1963_main
 
 @1963_main 
-audio: shuffle music/1960/AiGege.mp3 music/1960/IdealDoPetebista.mp3 music/1960/LiderDoTrabalhador.mp3 music/1960/RetratoDoBelho.mp3 music/1960/RodaViva.mp3 music/1960/VamosJangar.mp3 
+audio: shuffle music/SeEuFosse.mp3 music/CartaDeGetulio.mp3 music/1960/AiGege.mp3 music/1960/IdealDoPetebista.mp3 music/1960/LiderDoTrabalhador.mp3 music/1960/RetratoDoBelho.mp3 music/1960/RodaViva.mp3 music/1960/VamosJangar.mp3 
 new-page: true
 go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
@@ -594,8 +594,8 @@ go-to: main if difficulty >= 0; main.main_easy if difficulty < 0
 
  {! <center><img src="img/flavor/BannerImageStart.jpg"></center> !}
 
-The United States of Brazil is a land of contrasts. It has massive developments and a booming economy, but it also has poverty, suffering and hunger. In Brasília, the national capital, this contrast can be seen everywhere. In itself, Brasilia is an experiment—it asks if Brazil create and manage a whole new city in the middle of nowhere. It was created by the minds of architects and ambitious politicians, but also by the hands of Northeastern workers, who after finishing its construction were kicked out of the "Plano Piloto" to live in the capital's satellite cities.
+The United States of Brazil is a land of contrasts. It has massive developments and a booming economy, but it also has poverty, suffering and hunger. In Brasília, the national capital, this contrast can be seen everywhere. In itself, Brasilia is an experiment—it asks if Brazil can create and manage a whole new city in the middle of nowhere. It was created by the minds of architects and ambitious politicians, but also by the hands of Northeastern workers, who after finishing its construction were kicked out of the "Plano Piloto" to live in the capital's satellite cities.
 
 Brasília is also the home of a crisis—a military and political crisis. Ever since Jânio Quadros resigned in a sudden and dramatic manner, many in the Army and in Congress didn't want his vice-president to become president. They claimed he was a communist, an infiltrator. They made the nation into a parliamentary system behind the people's backs. They were almost able to go all in on a coup, but were stopped by fierce resistance from the Southern states. And after everything, the people chose to give your presidential powers back. 
 
-You are **João Belchior Marques Goulart**, the heir to Vargas, the new face of the PTB, son-in-law to Brizola and close friend to Tancredo. You are the president.
+You are **João Belchior Marques Goulart**, the heir to Vargas, the new face of the PTB, brother-in-law to Brizola and close friend to Tancredo. You are the president.
