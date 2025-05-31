@@ -114,16 +114,16 @@ if (Q.sa_strength) {
 
 = Army Factions
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Hardliners</span>!} Military Popularity: [+ hd_military_pop +]%;
+{!<span class="tooltip-text" title="The hardliners are the major opponents of current democratic rule, and one of João Goulart's most fierce opponents. They have repeatedly called for coups.">Hardliners</span>!} Military Popularity: [+ hd_military_pop +]%;
 Civilian Popularity: [+ hd_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Legalist</span>!} Military Popularity: [+ legalist_military_pop +]%;
+{!<span class="tooltip-text" title="Legalists are those who supported Lott's counter-coup. They are the fiercest defenders of the Constitution in the military and will stop at nothing to prevent a coup.">Legalist</span>!} Military Popularity: [+ legalist_military_pop +]%;
 Civilian Popularity: [+ legalist_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Sorbonne</span>!} Military Popularity: [+ sorbonne_military_pop +]%;
+{!<span class="tooltip-text" title="The Sorbonne are those who prefer the status quo. Although some of their members have called for coups against you, if you don't annoy them too much, they probably won't do anything.">Sorbonne</span>!} Military Popularity: [+ sorbonne_military_pop +]%;
 Civilian Popularity: [+ pracas_civilian_pop +]%
 
-{!<span class="tooltip-text" title="The Reichsbanner Schwarz-Rot-Gold is a popular organization for defending democracy, mostly affiliated with the SPD.">Praças</span>!} Military Popularity: [+ pracas_military_pop +]%;
+{!<span class="tooltip-text" title="They are the military faction most loyal to João Goulart. Entirely composed of low-ranking officers who seek enfranchisement. Many of them were present during the Campanha da Legalidade.">Praças</span>!} Military Popularity: [+ pracas_military_pop +]%;
 Civilian Popularity: [+ pracas_civilian_pop +]%
 
 Military Loyalty: [+ military_loyalty : loyalty +]
