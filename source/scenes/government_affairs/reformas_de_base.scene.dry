@@ -14,10 +14,10 @@ card-image: img/reformas.jpg
 
 The **Reformas de Base** have been in the works since 1961. During the parliamentary era, you were bound by the whims of the Council of Ministers, now you are free to enact your policies. Most of them need to get passed by Congress. 
 
-- @welfare
+- @electoral: Electoral reform
 
-@welfare
-subtitle: -1 budget
+@electoral
+subtitle: Brazil needs to stop disenfranchising its citizens.
 choose-if: budget > 0
 on-arrival: welfare += 1; workers_spd += 5*(1-dissent); unemployed_spd += 5*(1-dissent); budget -= 1; womens_rights += 1; coalition_dissent += 1 if welfare >= 1 and unemployed >= 15; unemployed -= 0.4; inflation += 0.2; economic_growth += 0.3;
 
