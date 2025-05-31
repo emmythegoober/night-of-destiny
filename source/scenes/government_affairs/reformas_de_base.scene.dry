@@ -3,7 +3,7 @@ new-page: true
 is-card: true
 on-arrival: reformas_timer += 2; month_actions += 1
 tags: govt_affairs
-card-image: img/reformas.jpg
+card-image: img/reformas.jpeg
 #subtitle: **Reform**, and all the woes it comes with it.
 
 = Reformas de Base
