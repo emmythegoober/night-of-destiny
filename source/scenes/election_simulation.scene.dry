@@ -8,16 +8,14 @@ set-jump: post_election
 
 @1928
 on-arrival: {!
-Q.workers = 46; // industry and trade
-Q.old_middle = 13; // "old mittelstand"
-// 16.4 trade & commerce, 6.6 public and private services, 4.4 domestic help
-Q.new_middle = 14; // "new mittelstand"
-Q.rural = 25; // agriculture and forestry employment... but many of those are proletarians so...
-// source: https://surface.syr.edu/cgi/viewcontent.cgi?filename=3&article=1016&context=books&type=additional page 43, table 3.3
-Q.unemployed = 8.6;
-Q.catholics = 30;
+Q.workers = 45; // urban workers
+Q.business = 12; // business people
+Q.middle = 14; // the middle KKKlass
+Q.rural = 32; // farm people
+Q.unemployed = 7.6;
+Q.catholics = 85; // in the MOST CATHOLIC NATION IN THE WORLD you should listen to them
 
-Q.classes = ['workers', 'old_middle', 'new_middle', 'rural', 'unemployed', 'catholics'];
+Q.classes = ['workers', 'business', 'middle', 'rural', 'unemployed', 'catholics'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
@@ -31,23 +29,23 @@ Q.workers_ptn = 5;
 Q.workers_prp = 0;
 Q.workers_other = 10;
 
-Q.old_middle_ptb = 5;
-Q.old_middle_psd = 0;
-Q.old_middle_udn = 5;
-Q.old_middle_psp = 10;
-Q.old_middle_pdc = 25;
-Q.old_middle_ptn = 25;
-Q.old_middle_prp = 10;
-Q.old_middle_other = 10;
+Q.business_ptb = 5;
+Q.business_psd = 0;
+Q.business_udn = 5;
+Q.business_psp = 10;
+Q.business_pdc = 25;
+Q.business_ptn = 25;
+Q.business_prp = 10;
+Q.business_other = 10;
 
-Q.new_middle_ptb = 5;
-Q.new_middle_psd = 1;
-Q.new_middle_udn = 10;
-Q.new_middle_psp= 25;
-Q.new_middle_pdc = 25;
-Q.new_middle_ptn = 10;
-Q.new_middle_prp = 5;
-Q.new_middle_other = 15;
+Q.middle_ptb = 5;
+Q.middle_psd = 1;
+Q.middle_udn = 10;
+Q.middle_psp = 25;
+Q.middle_pdc = 25;
+Q.middle_ptn = 10;
+Q.middle_prp = 5;
+Q.middle_other = 15;
 
 Q.rural_ptb = 10;
 Q.rural_psd = 0;

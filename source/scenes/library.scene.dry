@@ -118,15 +118,15 @@ go-to: menu
 
 **Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the SPD or KPD. They make up 40-50% of the population.
 
-**Old Mittelstand**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the far right. 10-15% of the population.
+**Business**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the far right. 10-15% of the population.
 
-**New Mittelstand**: The new middle class consists of white-collar workers and government employees. This is the base of liberalism. 10-15% of the population.
+**Middle Class**: The new middle class consists of white-collar workers and government employees. This is the base of liberalism. 10-15% of the population.
 
 **Rural**: Small and large farmers and independent rural workers. Protestant farmers often support the DNVP. 20-30% of the population.
 
 **Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the Center Party (or the Bavarian People's Party in Bavaria).
 
-**Jews** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
+**Immigrants** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
 
 
 @public_opinion
@@ -155,44 +155,44 @@ go-to: menu
 **Projected election results** (if the election were to be held now):
 
 # 1928: 30, 1930: 25, 1932: 22
-SPD: [+ spd_votes +]%
-
-[? if sapd_formed: SAPD: [+ sapd_votes +]% ?]
+PTB: [+ ptb_votes +]%
 
 # 1928: 15, 1930: 15, 1932: 
-Z + BVP: [+ z_votes +]%
+PSD: [+ psd_votes +]%
 
 # 1928: 10, 1930: 13
-KPD: [+ kpd_votes +]%
+UDN: [+ udn_votes +]%
 
 # 1928: 5, 1930: 4 (as DstP)
-[+ ddp_name +]: [+ ddp_votes +]%
+PSP: [+ psp_votes +]%
 
 # 1928: 9, 1930: 5
-DVP: [+ dvp_votes +]%
+PDC: [+ pdc_votes +]%
 
 # 1928: 14, 1930: 7
-DNVP: [+ dnvp_votes +]%
+PTN: [+ ptn_votes +]%
 
 # 1928: 3, 1930: 18
-NSDAP: [+ nsdap_votes +]%
+PRP: [+ prp_votes  +]%
 
 # 1928: 9, 1930: 10
 Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-Workers: SPD: [+ workers_spd_display +]%, Z: [+ workers_z_display +]%, KPD: [+ workers_kpd_display +]%, [+ ddp_name +]: [+ workers_ddp_display +]%, DVP: [+ workers_dvp_display +]%; DNVP: [+ workers_dnvp_display +]%, NSDAP: [+ workers_nsdap_display +]%, Others: [+ workers_other_display +]% [? if sapd_formed: SAPD: [+ workers_sapd_display +]% ?]
 
-New Middle Class: SPD: [+ new_middle_spd_display +]%, Z: [+ new_middle_z_display +]%, KPD: [+ new_middle_kpd_display +]%, [+ ddp_name +]: [+ new_middle_ddp_display +]%, DVP: [+ new_middle_dvp_display +]%; DNVP: [+ new_middle_dnvp_display +]%, NSDAP: [+ new_middle_nsdap_display +]%, Others: [+ new_middle_other_display +]% [? if sapd_formed: SAPD: [+ new_middle_sapd_display +]% ?]
+Workers: PTB: [+ workers_ptb_display +]%, PSD: [+ workers_psd_display +]%, UDN: [+ workers_udn_display +]%, PSP: [+ workers_psp_display +]%, PDC: [+ workers_pdc_display +]%; PTN: [+ workers_ptn_display +]%, PRP: [+ workers_prp_display +]%, Others: [+ workers_other_display +]% 
 
-Old Middle Class: SPD: [+ old_middle_spd_display +]%, Z: [+ old_middle_z_display +]%, KPD: [+ old_middle_kpd_display +]%, [+ ddp_name +]: [+ old_middle_ddp_display +]%, DVP: [+ old_middle_dvp_display +]%; DNVP: [+ old_middle_dnvp_display +]%, NSDAP: [+ old_middle_nsdap_display +]%, Others: [+ old_middle_other_display +]% [? if sapd_formed: SAPD: [+ old_middle_sapd_display +]% ?]
+Business: PTB: [+ business_ptb_display +]%, PSD: [+ business_psd_display +]%, UDN: [+ business_udn_display +]%, PSP: [+ business_psp_display +]%, PDC: [+ business_pdc_display +]%; PTN: [+ business_ptn_display +]%, PRP: [+ business_prp_display +]%, Others: [+ business_other_display +]% 
 
-Rural: SPD: [+ rural_spd_display +]%, Z: [+ rural_z_display +]%, KPD: [+ rural_kpd_display +]%, [+ ddp_name +]: [+ rural_ddp_display +]%, DVP: [+ rural_dvp_display +]%; DNVP: [+ rural_dnvp_display +]%, NSDAP: [+ rural_nsdap_display +]%, Others: [+ rural_other_display +]% [? if sapd_formed: SAPD: [+ rural_sapd_display +]% ?]
+Middle Class: PTB: [+ middle_ptb_display +]%, PSD: [+ middle_psd_display +]%, UDN: [+ middle_udn_display +]%, PSP: [+ middle_psp_display +]%, PDC: [+ middle_pdc_display +]%; PTN: [+ middle_ptn_display +]%, PRP: [+ middle_prp_display +]%, Others: [+ middle_other_display +]% 
 
-Unemployed: SPD: [+ unemployed_spd_display +]%, Z: [+ unemployed_z_display +]%, KPD: [+ unemployed_kpd_display +]%, [+ ddp_name +]: [+ unemployed_ddp_display +]%, DVP: [+ unemployed_dvp_display +]%; DNVP: [+ unemployed_dnvp_display +]%, NSDAP: [+ unemployed_nsdap_display +]%, Others: [+ unemployed_other_display +]% [? if sapd_formed: SAPD: [+ unemployed_sapd_display +]% ?]
+Rural: PTB: [+ rural_ptb_display +]%, PSD: [+ rural_psd_display +]%, UDN: [+ rural_udn_display +]%, PSP: [+ rural_psp_display +]%, PDC: [+ rural_pdc_display +]%; PTN: [+ rural_ptn_display +]%, PRP: [+ rural_prp_display +]%, Others: [+ rural_other_display +]% 
 
-Catholics: SPD: [+ catholics_spd_display +]%, Z: [+ catholics_z_display +]%, KPD: [+ catholics_kpd_display +]%, [+ ddp_name +]: [+ catholics_ddp_display +]%, DVP: [+ catholics_dvp_display +]%; DNVP: [+ catholics_dnvp_display +]%, NSDAP: [+ catholics_nsdap_display +]%, Others: [+ catholics_other_display +]% [? if sapd_formed: SAPD: [+ catholics_sapd_display +]% ?]
+Unemployed: PTB: [+ unemployed_ptb_display +]%, PSD: [+ unemployed_psd_display +]%, UDN: [+ unemployed_udn_display +]%, PSP: [+ unemployed_psp_display +]%, PDC: [+ unemployed_pdc_display +]%; PTN: [+ unemployed_ptn_display +]%, PRP: [+ unemployed_prp_display +]%, Others: [+ unemployed_other_display +]% 
+
+Catholics: PTB: [+ catholics_ptb_display +]%, PSD: [+ catholics_psd_display +]%, UDN: [+ catholics_udn_display +]%, PSP: [+ catholics_psp_display +]%, PDC: [+ catholics_pdc_display +]%; PTN: [+ catholics_ptn_display +]%, PRP: [+ catholics_prp_display +]%, Others: [+ catholics_other_display +]% 
+
 
 @parties
 go-to: menu
