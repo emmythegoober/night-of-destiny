@@ -550,7 +550,7 @@ Q.stampfer_advisor = 0; // Friedrich Stampfer
 set-bg: img/map_2.jpg
 new-page: true
 
- {! <center><img src="img/flavor/LegalityCamapign.jpg"></center> !}
+ {! <center><img src="img/flavor/LegalityCampaign.jpg"></center> !}
 
 > *"Today, with the loud testimony of the nation and the solidarity of the people, gathered in the square that belongs only to the people, the government, which is also the people and also belongs only to the people, reaffirms its unwavering resolve to fight with all its might for the reform of Brazilian society. Not just agrarian reform, but tax reform, broad electoral reform, the vote for the illiterate, the eligibility of all Brazilians, the purity of democratic democratic life, for economic emancipation, for social justice, and for the progress of Brazil"*
 
