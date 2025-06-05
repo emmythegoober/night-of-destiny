@@ -12,15 +12,15 @@ for (var c of Q.classes) {
     }
 }
 
-Q.pro_republic = Math.round(Q.pro_republic);
-Q.nationalism = Math.round(Q.nationalism);
+Q.pro_government = Math.round(Q.pro_government);
+Q.coup = Math.round(Q.coup);
 Q.socialism = Math.round(Q.socialism);
 
-if (Q.pro_republic < 0) {
-    Q.pro_republic = 0;
+if (Q.pro_government < 0) {
+    Q.pro_government = 0;
 }
-if (Q.pro_republic >= 100) {
-    Q.pro_republic = 99;
+if (Q.pro_government >= 100) {
+    Q.pro_government = 99;
 }
 // re-calculate party support
 // calculate normalized class voting for the achievements
@@ -76,16 +76,15 @@ if (Q.unemployed <= 1) {
 }
 
 // re-calculate dissent.
-var total_strength = Q.left_strength + Q.center_strength + Q.labor_strength + Q.reformist_strength + Q.neorevisionist_strength;
+var total_strength = Q.varguist_dissent + Q.unaligned_dissent + Q.labor_strength + Q.reformist_strength;
 
 // normalize strength for the different factions
-Q.left_strength = 100*Q.left_strength/total_strength;
-Q.center_strength = 100*Q.center_strength/total_strength;
+Q.varguist_strength = 100*Q.varguist_strength/total_strength;
+Q.unaligned_strength = 100*Q.unaligned_strength/total_strength;
 Q.labor_strength = 100*Q.labor_strength/total_strength;
 Q.reformist_strength = 100*Q.reformist_strength/total_strength;
-Q.neorevisionist_strength = 100*Q.neorevisionist_strength/total_strength;
 
-var total_dissent = Q.left_strength*Q.left_dissent + Q.center_strength*Q.center_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent + Q.neorevisionist_strength*Q.neorevisionist_dissent;
+var total_dissent = Q.varguist_strength*Q.varguist_dissent + Q.unaligned_strength*Q.unaligned_dissent + Q.labor_strength*Q.labor_dissent + Q.reformist_strength*Q.reformist_dissent + Q.neorevisionist_strength*Q.neorevisionist_dissent;
 
 
 Q.dissent = 0.01*total_dissent/total_strength;
@@ -187,13 +186,13 @@ if (Q.month_actions >= 1) {
 
     //////////////////////////////// Education & Science support/economic changes
     if (Q.major_curriculum && Q.major_curriculum == "democratic") {
-        if (Q.pro_republic < 60) {
-            Q.pro_republic += 0.5;
+        if (Q.pro_government < 60) {
+            Q.pro_government += 0.5;
         } 
     }
     if (Q.minor_curriculum && Q.minor_curriculum == "democratic") {
-        if (Q.pro_republic < 60) {
-            Q.pro_republic += 0.3;
+        if (Q.pro_government < 60) {
+            Q.pro_government += 0.3;
         } 
     }
     // science bonus to economic growth
@@ -247,19 +246,19 @@ if (Q.month_actions >= 1) {
         Q.economic_expansion += Q.economic_growth/2;
     }
     /////////////////////////////// update opinions based on economy
-    if (Q.unemployed > 15 && Q.pro_republic > 40) {
-        Q.pro_republic -= 1;
+    if (Q.unemployed > 15 && Q.pro_government > 40) {
+        Q.pro_government -= 1;
     }
-    if (Q.unemployed > 30 && Q.pro_republic > 20) {
-        Q.pro_republic -= 1;
+    if (Q.unemployed > 30 && Q.pro_government > 20) {
+        Q.pro_government -= 1;
     }
-    if (Q.inflation >= 8 && Q.pro_republic > 40) {
-        Q.pro_republic -= 1;
+    if (Q.inflation >= 8 && Q.pro_government > 40) {
+        Q.pro_government -= 1;
     }
 
-    ///////////////////////////// change party support based on pro_republic
-    // if pro_republic is less than the support of the Weimar coalition, reduce SPD support...
-    if (Q.pro_republic < (Q.spd_votes + Q.ddp_votes + Q.z_votes - 3)) {
+    ///////////////////////////// change party support based on pro_government
+    // if pro_government is less than the support of the Weimar coalition, reduce SPD support...
+    if (Q.pro_government < (Q.spd_votes + Q.ddp_votes + Q.z_votes - 3)) {
         if (Q.new_middle_spd > 0) {
             Q.new_middle_spd -= 5/12;
             Q.new_middle_nsdap += 3/12;
@@ -441,7 +440,7 @@ if (Q.month_actions >= 1) {
         }
     }
     // prevent forever support if the economy is bad
-    if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_republic <= 45 && Q.spd_in_government) {
+    if (Q.year >= 1934 && (Q.inflation >= 8 || Q.unemployed >= 20) && Q.pro_government <= 45 && Q.spd_in_government) {
         if (Q.workers_spd_normalized > 40) {
             Q.workers_spd -= 6/12;
         }
