@@ -3,7 +3,6 @@ subtitle: Something rotten is brewing in
 view-if: ptb_in_presidency and year >= 1964 and coup > 50 and comicio_da_central_timer = 1 and marcha_da_familia_timer = 0
 new-page: true
 max-visits: 1
-on-arrival: coup += 5 and marcha_da_familia_timer += 3 and udn_relation -= 10 and psd_relation -=5
 tags: event
 
 = Marcha da Família com Deus pela Liberdade
