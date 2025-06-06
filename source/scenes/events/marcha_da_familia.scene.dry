@@ -1,6 +1,6 @@
 title: Marcha da Família
 subtitle: Something rotten is brewing in São Paulo...
-view-if: ptb_in_presidency = 1 and year >= 1964 and economic_growth <= 1.0 and inflation >= 60 and coup > 50 and comicio_da_central_timer = 1 and marcha_da_familia_timer = 0
+view-if: ptb_in_presidency = 1 and year >= 1964 and economic_growth <= 1.0 and inflation >= 60 and coup > 50 and comicio_da_central = 1 and marcha_da_familia = 0
 new-page: true
 max-visits: 1
 tags: event

@@ -232,11 +232,21 @@ Q.ptn_cd = Q.ptn_votes;
 Q.prp_cd = Q.prp_votes;
 Q.other_r = Q.other_votes;
 
-// The largest party can only be the NSDAP or the SPD.
-Q.largest_party = 'PTb';
+
+Q.largest_party = 'PTB';
 if (Q.udn_cd >= Q.ptb_cd && Q.udn_cd >= Q.ptb_cd) {
     Q.largest_party = 'UDN';
 }
+
+if (Q.psp_cd >= Q.ptb_cd && Q.psp_cd >= Q.ptb_cd) {
+    Q.largest_party = 'PSP';
+}
+
+if (Q.psd_cd >= Q.ptb_cd && Q.psd_cd >= Q.ptb_cd) {
+    Q.largest_party = 'PSD';
+}
+
+
 
 // coalitions
 Q.weimar_coalition = Q.spd_r + Q.ddp_r + Q.z_r - 3;
