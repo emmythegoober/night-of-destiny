@@ -1,5 +1,5 @@
 title: Marcha da Família
-subtitle: Something rotten is brewing in  
+subtitle: Something rotten is brewing in São Paulo...
 view-if: ptb_in_presidency = 1 and year >= 1964 and economic_growth <= 1.0 and inflation >= 60 and coup > 50 and comicio_da_central_timer = 1 and marcha_da_familia_timer = 0
 new-page: true
 max-visits: 1
@@ -32,8 +32,29 @@ go-to: investigation_on_the_march
 
 @investigation_on_the_march
 
+ {! <center><img src="img/flavor/Meeting.jpg"></center> !}
+
 Support for a Coup: [+ coup +]%
 
 Something is wrong, very wrong. You call a secret meeting with your most trusted companions—they're not necessarily your advisors, but those you know can help. Tancredo, Brizola, Lott, everyone you need is here. They all know this might be the last chance you get to stop a coup from happening.
 
+- @army: We must cleanse the military of Hardliners.
+- @business: It's business. They've been funding IPES and everything that prompted this.
+- @udn: Lacerda—that crow—is the man behind all of this. We need to find a way to get rid of him.
+- @psd: I'm very sorry Tancredo, but the PSD is behind this.
+- @america: Kennedy is clearly financing this march and IPES.
 
+@army
+AAAA
+
+@business
+AAAA
+
+@udn
+AAAA
+
+@psd
+AAAA
+
+@america
+AAAA
