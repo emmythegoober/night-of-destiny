@@ -15,4 +15,4 @@ does nothing, just test stuff.
 on-arrival: year += 1; presidency_vacant += 1; coup += 70
 
 @march
-on-arrival: year == 1964 and economic_growth == 0.9 and inflation == 61 and coup == 80 and comicio_da_central_timer == 1 and marcha_da_familia_timer == 0
+on-arrival: year == 1964; economic_growth == 0.9; inflation == 61; coup == 80; comicio_da_central_timer == 1; marcha_da_familia_timer == 0
