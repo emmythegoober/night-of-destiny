@@ -1,9 +1,37 @@
 title: Marcha da Família
 subtitle: Something rotten is brewing in  
-view-if: ptb_in_presidency and year >= 1964 and coup > 50 and comicio_da_central_timer = 1 and marcha_da_familia_timer = 0
+view-if: ptb_in_presidency = 1 and year >= 1964 and economic_growth <= 1.0 and inflation >= 60 and coup > 50 and comicio_da_central_timer = 1 and marcha_da_familia_timer = 0
 new-page: true
 max-visits: 1
 tags: event
 
 = Marcha da Família com Deus pela Liberdade
+
+ {! <center><img src="img/flavor/MarchaFamilia.jpg"></center> !}
+
+**Hell is empty, and all the devils are here.** As you expected, the Comício da Central triggered protests—you just didn't expect a betrayal from the PSD. Antônio Sílvio Cunha Bueno, congressman for São Paulo, decided he had had enough of your communist meddling and launched the *Marcha da Família com Deus pela Liberdade*
+
+Conservative sectors all around the nation are calling for two things: a military intervention and your arrest. Midnight approaches.
+
+- @tragedy: This might be our end.
+- @fight: Find support anywhere, we need to fight this.
+- @investigate: Who is behind these groups?
+
+@tragedy
+on-arrival: coup += 10; reformist_dissent += 10; varguist_dissent += 10; labor_dissent += 10; unaligned_dissent += 10; military_loyalty -= 0.1
+
+In your nightmares, you hear the sounds of marching armies.
+
+@fight
+on-arrival: coup += 5; reformist_dissent += 5; varguist_dissent += 5; labor_dissent += 5; unaligned_dissent += 5; military_loyalty -= 0.1
+
+@investigate
+on-arrival: coup += 5; reformist_dissent += 5; varguist_dissent += 5; labor_dissent += 5; unaligned_dissent += 5; military_loyalty -= 0.1
+go-to: investigation_on_the_march
+
+
+@investigation_on_the_march
+
+Support for a Coup: [+ coup +]%
+
 

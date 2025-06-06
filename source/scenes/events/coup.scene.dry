@@ -1,0 +1,19 @@
+title: The [+ month +] Coup
+subtitle: Midnight has arrived.  
+view-if: ptb_in_presidency = 1 and year >= 1964 and coup > 80 and presidency_vacant = 1
+new-page: true
+max-visits: 1
+on-arrival: ptb_in_presidency -= 1; military_presidency += 1; president = "Castelo Branco"; president_party = "Military"
+tags: event
+
+= The [+ month +] Coup
+
+ {! <center><img src="img/flavor/Coup.jpg"></center> !}
+
+ The deal is done. Brazil now lies under the boot of a military regime. 
+
+ - @game_over: From the Uruguayan countryside, you witness the fall of a once great nation.
+
+
+
+ 

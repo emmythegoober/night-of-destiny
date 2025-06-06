@@ -104,13 +104,13 @@ Q.pdc_relation = 20;
 Q.ptn_relation = 20;
 Q.prp_relation = 10;
 
-Q.kpd_leader = "Thälmann";
-// alternative is the Conciliators as party leader
-Q.kpd_party_leader = "Thälmann";
-Q.z_leader = "Brüning";
-// party leader - can be Ludwig Kaas, Joseph Joos, or Adam Stegerwald after the 1963 December conference. Joos will be most friendly to the SPD.
-Q.z_party_leader = "Marx";
-Q.nsdap_leader = "Hitler";
+Q.psd_leader = "Kubitschek";
+Q.udn_leader = "Lacerda";
+Q.psp_leader = "Adhemar";
+Q.prp_leader = "Salgado";
+
+// hey, did goulart flee?
+Q.presidency_vacant = 0;
 
 // hmm... maybe we can play nice with Hindenburg???
 Q.hindenburg_relation = 25;
@@ -315,6 +315,7 @@ Q.psp_in_presidency = 0;
 Q.pdc_in_presidency = 0;
 Q.ptn_in_presidency = 0;
 Q.prp_in_presidency = 0;
+Q.military_presidency = 0;
 
 Q.ptb_in_vice_presidency = 0;
 Q.psd_in_vice_presidency = 0;
