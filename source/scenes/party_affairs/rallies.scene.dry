@@ -1,0 +1,8 @@
+title: Rallying
+new-page: true
+is-card: true
+tags: party_affairs
+view-if: rallying_timer <= 0
+on-arrival: month_actions += 1; rallying_timer = 6
+card-image: img/rally.jpg
+
