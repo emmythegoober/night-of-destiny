@@ -9,6 +9,10 @@ tags: economic_affairs
 does nothing, just test stuff.
 
 - @coup: Instantly launches coup
+- @march: Causes the march
 
 @coup
-on_arrival: year += 1; presidency_vacant += 1; coup += 70
+on-arrival: year += 1; presidency_vacant += 1; coup += 70
+
+@march
+on-arrival: year == 1964 and economic_growth == 0.9 and inflation == 61 and coup == 80 and comicio_da_central_timer == 1 and marcha_da_familia_timer == 0
