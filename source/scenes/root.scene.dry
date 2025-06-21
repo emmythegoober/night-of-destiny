@@ -95,9 +95,9 @@ Q.moderate_plan_support = 0;
 Q.moderate_plan_adopted = 0;
 
 // forpol
-Q.american_support = 1;
-Q.soviet_support = 0;
-Q.latam_support = 1
+Q.american_support = 50;
+Q.soviet_support = 40;
+Q.latam_support = 50;
 
 // organizations
 
