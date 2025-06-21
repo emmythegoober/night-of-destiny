@@ -179,3 +179,11 @@ Unemployed: PTB: [+ unemployed_ptb_display +]%, PSD: [+ unemployed_psd_display +
 Catholics: PTB: [+ catholics_ptb_display +]%, PSD: [+ catholics_psd_display +]%, UDN: [+ catholics_udn_display +]%, PSP: [+ catholics_psp_display +]%, PDC: [+ catholics_pdc_display +]%; PTN: [+ catholics_ptn_display +]%, PRP: [+ catholics_prp_display +]%, Others: [+ catholics_other_display +]% 
 
 Support for the Administration: [+ pro_government +]%
+
+@forpol
+
+Our relations with the Americans [+ american_support : foreign_policy +]
+
+Our relations with the Soviets [+ soviet_support : foreign_policy +]
+
+Our relations with the rest of Latin America [+ latam_support : foreign_policy +]
