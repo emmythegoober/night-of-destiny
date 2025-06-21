@@ -165,7 +165,7 @@
   };
 
   // TODO: have some code for tabbed sidebar browsing.
-  window.updateSidebar = function() {
+ window.updateSidebar = function() {
       $('#qualities').empty();
       var scene = dendryUI.game.scenes[window.statusTab];
       dendryUI.dendryEngine._runActions(scene.onArrival);
@@ -191,6 +191,7 @@
   window.onDisplayContent = function() {
       window.updateSidebar();
   };
+
 
   /*
    * This function copied from the code for Infinite Space Battle Simulator
