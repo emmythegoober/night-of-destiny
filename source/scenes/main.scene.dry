@@ -39,7 +39,6 @@ max-cards: 4
 
 - @party
 - @govt
-- @economy
 - @military
 - #advisor
 - @shuffle_leadership_pinned
@@ -58,13 +57,6 @@ card-image: img/brasilia.jpg
 is-deck: true
 
 - #govt_affairs
-
-@economy
-title: Economic Affairs
-card-image: img/operarios.jpg
-is-deck: true
-
-- #economic_affairs
 
 @military
 title: Military Affairs
