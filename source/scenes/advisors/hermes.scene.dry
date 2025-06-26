@@ -1,0 +1,8 @@
+title: Hermes Lima
+is-pinned-card: true 
+tags: advisor, labor
+card-image: img/portraits/HermesLima.jpg
+new-page: true
+view-if: hermes_advisor = 1
+
+= Hermes Lima

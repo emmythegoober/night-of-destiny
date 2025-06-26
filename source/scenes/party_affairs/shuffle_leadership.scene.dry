@@ -89,7 +89,7 @@ frequency: 1
 - @brizolist: Add Brizolists
 - @reformist: Add Reformists
 - @labourists: Add Labourists
-- @military: Add Military Personell
+- @military: Add Military Personnel
 - @nonfactional: Add Unaligned advisors
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
@@ -196,6 +196,17 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
+@add_hermes
+title: Hermes Lima
+subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+is-card: true
+card-image: img/portraits/HermesLima.png
+tags: labourist_advisor
+view-if: hermes_advisor = 0 and n_advisors < 3
+on-arrival: hermes_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+San Tiago Dantas is now an advisor. 
 
 
 

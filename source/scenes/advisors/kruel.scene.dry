@@ -1,6 +1,6 @@
 title: Amaury Kruel
 is-pinned-card: true
-tags: advisor, centrist, military
+tags: advisor, military
 card-image: img/portraits/AmauryKruel.jpg
 view-if: kruel_advisor = 1
 new-page: true
