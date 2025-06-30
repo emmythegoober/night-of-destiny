@@ -9,12 +9,24 @@ new-page: true
 
 San Tiago Dantas is our current Finance Minister. A former integralist, he has now embraced a centre-left mindset. One of the main creators of the 'Independent Foreign Policy' strategy that was implemented during Quadros' government, he knows how to strike deals with the third world.  
 
-- @plano_trienal
+- @improveamerican
+- @improvesoviet
 - @root: Return to main
 
-@plano_trienal
-title: Continue the Plano Trienal
-subtitle: Implements policies to curb inflation.
+@improveamerican
+title: Go to Washington
+subtitle: We will send San Tiago to Washington to help improve relations. 
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
 choose-if: advisor_action_timer == 0 and ptb_in_presidency == 1 
-on-arrival: advisor_action_timer = 6; fiscal_policy_timer -= 6; last_advisor_action = 1
+on-arrival: advisor_action_timer = 6; american_support += 5; soviet_support -= 5; last_advisor_action = 1
+
+We have improved our relations with the Americans at the cost of our relation with the Soviets
+
+@improvesoviet
+title: Go to Moscow
+subtitle: We will send San Tiago to Moscow to help improve relations. 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+choose-if: advisor_action_timer == 0 and ptb_in_presidency == 1 
+on-arrival: advisor_action_timer = 6; american_support -= 5; soviet_support += 5; last_advisor_action = 1
+
+We have improved our relations with the Soviets at the cost of our relation with the Americans

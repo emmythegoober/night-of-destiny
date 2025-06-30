@@ -174,7 +174,7 @@ go-to: advisor_menu
 Amaury Kruel is now an advisor. 
 
 @add_lott
-title: Henrique Lott
+title: Henrique Teixeira Lott
 subtitle: Henrique Teixeira Lott is the head of the Legalist Movement.
 is-card: true
 card-image: img/portraits/HenriqueLott.png
@@ -183,7 +183,7 @@ view-if: lott_advisor = 0 and n_advisors < 3
 on-arrival: lott_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-Amaury Kruel is now an advisor. 
+Henrique Teixeira Lott is now an advisor. 
 
 @add_santiago
 title: San Tiago Dantas
