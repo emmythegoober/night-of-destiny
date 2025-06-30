@@ -85,12 +85,13 @@ tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_adv
 frequency: 1
 
 
-- @getulist: Add Getulists
-- @brizolist: Add Brizolists
-- @reformist: Add Reformists
-- @labourists: Add Labourists
-- @military: Add Military Personnel
-- @nonfactional: Add Unaligned advisors
+- @getulist: Add Getulists.
+- @brizolist: Add Brizolists.
+- @reformist: Add Reformists.
+- @labourists: Add Labourists.
+- @military: Add Military Personnel.
+- @nonfactional: Add Unaligned advisors.
+- @other: Add members of other parties.
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
 
@@ -124,9 +125,14 @@ view-if: n_advisors < 3
 
 - #nonfactional_advisor
 
+@other
+view-if: n_advisors < 3
+
+- #other_advisor
+
 @add_brizola
 title: Leonel Brizola
-subtitle: Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He is also your brother-in-law. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+subtitle: Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He is also your brother-in-law. 
 is-card: true
 card-image: img/portraits/LeonelBrizola.png
 tags: brizolist_advisor
@@ -141,7 +147,7 @@ title: Tancredo Neves
 subtitle: Tancredo Neves was Vargas' minister of justice and the first prime minister during the parliamentary era. He is known as a compromise man but will fight for you no matter the cost. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
 card-image: img/portraits/TancredoNeves.png
-tags: getulist_advisor
+tags: other_advisor
 view-if: tancredo_advisor = 0 and n_advisors < 3
 on-arrival: tancredo_advisor = 1; n_advisors += 1
 go-to: advisor_menu
@@ -195,6 +201,19 @@ on-arrival: santiago_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
+
+@add_kamala
+title: San Tiago Dantas
+subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+is-card: true
+card-image: img/portraits/SanTiagoDanta.png
+tags: getulist_advisor
+view-if: santiago_advisor = 0 and n_advisors < 3
+on-arrival: santiago_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+San Tiago Dantas is now an advisor. 
+
 
 @add_hermes
 title: Hermes Lima

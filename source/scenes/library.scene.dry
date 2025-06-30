@@ -11,6 +11,7 @@ Herein contains relevant information about the government and politics of the Un
 
 - @government: Brazil's system of government
 - @brazil_timeline: Timeline of the Fourth Republic before 1928
+- @glossary: Glossary
 - @curr_gov: Current government details
 - @demographics: Demographics
 - @parties: Parties
@@ -61,6 +62,18 @@ Jânio Quadros becomes governor of São Paulo.
 **1961**: Quadros is inaugurated as president but resigns after just seven months. His resignation letter claims that "occult forces" made him leave the presidency. Goulart, who was on a diplomatic visit to Communist China, is not immediately inaugurated. This delay allows the military ministers to veto his presidency and install the President of the Câmara dos Deputados, Ranieri Mazzilli, as interim president. Leonel Brizola launches the Campanha da Legalidade, vowing to defend the constitutional line of succession. Tancredo Neves meets with Goulart in Paris to discuss a possible parliamentary system. After hours of discussion, Jango agrees. Goulart returns to Brazil, and Neves is appointed Prime Minister.
 
 **6 January 1963**: A referendum is held to decide whether Goulart should regain full presidential powers. The result is overwhelmingly in favor. Parliamentarism is abolished.
+
+
+@glossary
+
+**CPI** - Short for *Comissão Parlamentar de Inquérito*, it is an investigation committee of the legislative branch. 
+
+**Campanha da Legalidade** - A military and civilian movement headed by Rio Grande do Sul's governor Leonel Brizola.after the military veto against João Goulart's inauguration. 
+
+**Dispositivo Militar** - A policy by João Goulart that consisted in promoting loyal officers to important posts in both the military hierarchy and his cabinet.
+
+**Reformas de Base** - A series of sweeping reforms to the Brazilian political, social and economic arenas promoted by the Goulart government. 
+
 
 @curr_gov
 go-to: cabinet if ptb_in_presidency ; menu if not ptb_in_presidency

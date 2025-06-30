@@ -99,7 +99,8 @@ Q.american_support = 50;
 Q.soviet_support = 40;
 Q.latam_support = 50;
 
-// organizations
+// is pcb banned?
+Q.pcb_banned = 1;
 
 // inter-party relations
 Q.psd_relation = 40;

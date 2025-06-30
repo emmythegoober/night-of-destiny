@@ -7,7 +7,7 @@ view-if: brizola_advisor = 1
 
 = Leonel Brizola
 
-Tancredo Neves is the current leader for our government in the Chamber of Deputies. Although a member of the PSD, Tancredo has proved himself as a loyal member of our government. He was the first prime minister during the parliamentary era.
+Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He was the creator of the *Campanha da Legalidade* that helped you become president once again. A more radical member of the PTB, he believed that you should've marched on Brasília and close Congress to restore democratic rule. He is also your brother-in-law. 
 
 - @psdtalks
 - @clear_agenda
