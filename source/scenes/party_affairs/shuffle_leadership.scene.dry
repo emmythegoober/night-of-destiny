@@ -137,8 +137,6 @@ view-if: n_advisors < 3
 
 - #other_advisor
 
-// Brizolists
-
 @add_brizola
 title: Leonel Brizola
 subtitle: Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He is also your brother-in-law. 
@@ -150,8 +148,6 @@ on-arrival: brizola_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Leonel Brizola is now an advisor. 
-
-// PSD
 
 @add_tancredo
 title: Tancredo Neves
@@ -165,8 +161,6 @@ go-to: advisor_menu
 
 Tancredo Neves is now an advisor. 
 
-// Military
-
 @add_kruel
 title: Amaury Kruel
 subtitle: Amaury Kruel is your Minister of War and one of the former members of the Legality Campaign that allowed to gain power. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
@@ -178,8 +172,6 @@ on-arrival: kruel_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Amaury Kruel is now an advisor. 
-
-// Labourist
 
 @add_santiago
 title: San Tiago Dantas
@@ -205,7 +197,6 @@ go-to: advisor_menu
 
 Hermes Lima is now an advisor. 
 
-// Reformists
 
 @add_biden
 title: San Tiago Dantas
@@ -219,7 +210,6 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-// Nonfactional
 
 @add_trump
 title: San Tiago Dantas
@@ -233,7 +223,6 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-// Getulist
 
 @add_kamala
 title: San Tiago Dantas
@@ -247,7 +236,7 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-// Other
+
 @add_walz
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
