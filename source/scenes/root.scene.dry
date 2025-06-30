@@ -510,16 +510,44 @@ Q.sh_ban_timer = 0;
 Q.kpd_ultimatum_timer = 0;
 Q.march_on_berlin_timer = 0;
 
-// initials
-Q.santiago_advisor = 1; // San Tiago Dantas
-Q.tancredo_advisor = 1; // Tancredo Neves
-Q.kruel_advisor = 1; // Amaury Kruel
+// getulist advisors
+Q.ivete_advisor = 0; // Ivete Vargas
+Q.evandro_advisor = 0; // Evandro Lins e Silva 
 
 // brizolist advisors
 Q.brizola_advisor = 0; // Leonel Brizola
+Q.juliao_advisor = 0; // Francisco Julião
+
+// reformist advisors
+Q.serra_advisor = 0; // José Serra
+Q.paiva_advisor = 0; // Rubens Paiva
+Q.oswaldo_advisor = 0; // Oswaldo Lima Filho 
 
 // labourist advisors
 Q.hermes_advisor = 0; // Hermes Lima
+Q.furtado_advisor = 0; // Celso Furtado
+Q.magalhaes_advisor = 0; // Sergio Magalhães
+Q.santiago_advisor = 1; // San Tiago Dantas
+
+// military
+Q.lott_advisor = 0; // Henrique Lott
+Q.dantas_advisor = 0; // Jair Dantas Ribeiro
+Q.kruel_advisor = 1; // Amaury Kruel
+
+// other
+Q.prestes_advisor = 0; // Luís Carlos Prestes
+Q.darcy_advisor = 0; // Darcy Ribeiro 
+Q.freire_advisor = 0; // Paulo Freire 
+Q.arraes_advisor = 0; // Miguel Arraes
+
+// psd
+Q.ulysses_advisor = 0; // Ulysses Guimarães
+Q.kubitschek_advisor = 0; // Juscelino Kubitschek
+Q.andrade_advisor = 0; // Auro de Moura Andrade
+Q.peixoto_advisor = 0; // Amaral Peixoto
+Q.tancredo_advisor = 1; // Tancredo Neves
+
+
 !}
 set-bg: img/map_2.jpg
 new-page: true

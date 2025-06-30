@@ -91,6 +91,7 @@ frequency: 1
 - @labourists: Add Labourists.
 - @military: Add Military Personnel.
 - @nonfactional: Add Unaligned advisors.
+- @psdmember: Add members of the PSD
 - @other: Add members of other parties.
 - @rm_main: Remove advisors instead.
 - @remove_none: Stop changing advisors.
@@ -125,10 +126,18 @@ view-if: n_advisors < 3
 
 - #nonfactional_advisor
 
+@psdmember
+view-if: n_advisors < 3
+
+- #psd_advisor
+
+
 @other
 view-if: n_advisors < 3
 
 - #other_advisor
+
+// Brizolists
 
 @add_brizola
 title: Leonel Brizola
@@ -142,17 +151,21 @@ go-to: advisor_menu
 
 Leonel Brizola is now an advisor. 
 
+// PSD
+
 @add_tancredo
 title: Tancredo Neves
 subtitle: Tancredo Neves was Vargas' minister of justice and the first prime minister during the parliamentary era. He is known as a compromise man but will fight for you no matter the cost. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
 card-image: img/portraits/TancredoNeves.png
-tags: other_advisor
+tags: psd_advisor
 view-if: tancredo_advisor = 0 and n_advisors < 3
 on-arrival: tancredo_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 Tancredo Neves is now an advisor. 
+
+// Military
 
 @add_kruel
 title: Amaury Kruel
@@ -166,6 +179,8 @@ go-to: advisor_menu
 
 Amaury Kruel is now an advisor. 
 
+// Labourist
+
 @add_santiago
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
@@ -177,6 +192,20 @@ on-arrival: santiago_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
+
+@add_hermes
+title: Hermes Lima
+subtitle: Hermes Lima was the last Prime Minister of Brazil
+is-card: true
+card-image: img/portraits/HermesLima.png
+tags: labourist_advisor
+view-if: hermes_advisor = 0 and n_advisors < 3
+on-arrival: hermes_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Hermes Lima is now an advisor. 
+
+// Reformists
 
 @add_biden
 title: San Tiago Dantas
@@ -190,6 +219,8 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
+// Nonfactional
+
 @add_trump
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
@@ -201,6 +232,8 @@ on-arrival: santiago_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
+
+// Getulist
 
 @add_kamala
 title: San Tiago Dantas
@@ -214,18 +247,21 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
-
-@add_hermes
-title: Hermes Lima
+// Other
+@add_walz
+title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
 is-card: true
-card-image: img/portraits/HermesLima.png
-tags: labourist_advisor
-view-if: hermes_advisor = 0 and n_advisors < 3
-on-arrival: hermes_advisor = 1; n_advisors += 1
+card-image: img/portraits/SanTiagoDanta.png
+tags: other_advisor
+view-if: santiago_advisor = 0 and n_advisors < 3
+on-arrival: santiago_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
+
+
+
 
 
 
