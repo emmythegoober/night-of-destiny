@@ -151,7 +151,7 @@ Leonel Brizola is now an advisor.
 
 @add_tancredo
 title: Tancredo Neves
-subtitle: Tancredo Neves was Vargas' minister of justice and the first prime minister during the parliamentary era. He is known as a compromise man but will fight for you no matter the cost. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+subtitle: Tancredo Neves is a close ally in the PSD and the first Prime Minister.
 is-card: true
 card-image: img/portraits/TancredoNeves.png
 tags: psd_advisor
@@ -163,7 +163,7 @@ Tancredo Neves is now an advisor.
 
 @add_kruel
 title: Amaury Kruel
-subtitle: Amaury Kruel is your Minister of War and one of the former members of the Legality Campaign that allowed to gain power. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+subtitle: Amaury Kruel is the current Minister of War.
 is-card: true
 card-image: img/portraits/AmauryKruel.png
 tags: military_advisor
@@ -173,9 +173,21 @@ go-to: advisor_menu
 
 Amaury Kruel is now an advisor. 
 
+@add_lott
+title: Henrique Lott
+subtitle: Henrique Teixeira Lott is the head of the Legalist Movement.
+is-card: true
+card-image: img/portraits/HenriqueLott.png
+tags: military_advisor
+view-if: lott_advisor = 0 and n_advisors < 3
+on-arrival: lott_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Amaury Kruel is now an advisor. 
+
 @add_santiago
 title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+subtitle: San Tiago Dantas is the current Minister of Finance.
 is-card: true
 card-image: img/portraits/SanTiagoDanta.png
 tags: labourist_advisor
@@ -200,7 +212,7 @@ Hermes Lima is now an advisor.
 
 @add_biden
 title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+subtitle: San Tiago Dantas is the current Minister of Finance.
 is-card: true
 card-image: img/portraits/SanTiagoDanta.png
 tags: reformist_advisor
