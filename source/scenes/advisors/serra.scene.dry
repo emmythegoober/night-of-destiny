@@ -1,0 +1,12 @@
+title: José Serra
+is-pinned-card: true 
+tags: advisor, reformist
+card-image: img/portraits/JoseSerra.jpg
+new-page: true
+view-if: serra_advisor = 1
+
+= José Serra
+
+José Serra is the current president of the National Student Union (UNE) and the founder of the *Ação Popular*, a left-wing organisation led by students. As President of the UNE, he has supported the *Reformas de Base*.
+
+- @root: Return to main

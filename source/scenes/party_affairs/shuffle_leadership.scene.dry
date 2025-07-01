@@ -21,7 +21,7 @@ Removing advisors will increase dissent from their faction of the party, while s
 
 @rm_main
 title: Remove advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor 
+tags: getulist_addvisor, reformist_advisor, brizolist_advisor, labourist_advisor, military_advisor, psd_advisor, other_advisor
 frequency: 1
 
 - #remove_advisor
@@ -33,14 +33,186 @@ go-to: root
 tags: remove_advisor
 
 
-@remove_tancredo
-title: Remove Tancredo
-view-if: tancredo_advisor = 1
-on-arrival: tancredo_advisor = 0; varguist_dissent += 5; n_advisors -= 1
+@remove_andrade
+title: Remove Andrade
+view-if: andrade_advisor = 1
+on-arrival: andrade_advisor = 0; n_advisors -= 1
 tags: remove_advisor
 go-to: rm_main
 
-Tancredo has been removed as an advisor. The Getulists disapprove of this choice.
+Andrade has been removed as an advisor.
+
+
+@remove_arraes
+title: Remove Arraes
+view-if: arraes_advisor = 1
+on-arrival: arraes_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Arraes has been removed as an advisor.
+
+@remove_dantas
+title: Remove Ribeiro
+view-if: dantas_advisor = 1
+on-arrival: dantas_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Ribeiro has been removed as an advisor.
+
+@remove_darcy
+title: Remove Darcy
+view-if: darcy_advisor = 1
+on-arrival: darcy_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Darcy has been removed as an advisor.
+
+@remove_evandro
+title: Remove Evandro
+view-if: evandro_advisor = 1
+on-arrival: evandro_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Evandro has been removed as an advisor.
+
+@remove_freire
+title: Remove Freire
+view-if: freire_advisor = 1
+on-arrival: freire_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Freire has been removed as an advisor.
+
+@remove_furtado
+title: Remove Furtado
+view-if: furtado_advisor = 1
+on-arrival: furtado_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Furtado has been removed as an advisor.
+
+@remove_hermes
+title: Remove Hermes
+view-if: hermes_advisor = 1
+on-arrival: hermes_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Hermes has been removed as an advisor.
+
+@remove_ivete
+title: Remove Ivete
+view-if: ivete_advisor = 1
+on-arrival: ivete_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Ivete has been removed as an advisor.
+
+@remove_juliao
+title: Remove Julião
+view-if: juliao_advisor = 1
+on-arrival: juliao_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Julião has been removed as an advisor.
+
+@remove_kubitschek
+title: Remove Kubitschek
+view-if: kubitschek_advisor = 1
+on-arrival: kubitschek_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Kubitschek has been removed as an advisor.
+
+@remove_lott
+title: Remove Lott
+view-if: lott_advisor = 1
+on-arrival: lott_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Lott has been removed as an advisor.
+
+@remove_magalhaes
+title: Remove Magalhães
+view-if: magalhaes_advisor = 1
+on-arrival: magalhaes_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Magalhães has been removed as an advisor.
+
+@remove_oswaldo
+title: Remove Oswaldo
+view-if: oswaldo_advisor = 1
+on-arrival: oswaldo_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Oswaldo has been removed as an advisor.
+
+@remove_paiva
+title: Remove Paiva
+view-if: paiva_advisor = 1
+on-arrival: paiva_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Paiva has been removed as an advisor.
+
+@remove_peixoto
+title: Remove Peixoto
+view-if: peixoto_advisor = 1
+on-arrival: peixoto_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Peixoto has been removed as an advisor.
+
+@remove_prestes
+title: Remove Prestes
+view-if: prestes_advisor = 1
+on-arrival: prestes_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Prestes has been removed as an advisor.
+
+@remove_serra
+title: Remove Serra
+view-if: serra_advisor = 1
+on-arrival: serra_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Serra has been removed as an advisor.
+
+@remove_ulysses
+title: Remove Ulysses
+view-if: ulysses_advisor = 1
+on-arrival: ulysses_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Ulysses has been removed as an advisor.
+
+@remove_tancredo
+title: Remove Tancredo
+view-if: tancredo_advisor = 1
+on-arrival: tancredo_advisor = 0; psd_relation -= 4; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Tancredo has been removed as an advisor. The PSD disapproves of this choice.
 
 @remove_kruel
 title: Remove Kruel
@@ -81,7 +253,7 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: center_advisor, left_advisor, reformist_advisor, labor_advisor, neorev_advisor, nonfactional_advisor
+tags: getulist_addvisor, reformist_advisor, brizolist_advisor, labourist_advisor, military_advisor, psd_advisor, other_advisor
 frequency: 1
 
 
@@ -90,7 +262,6 @@ frequency: 1
 - @reformist: Add Reformists.
 - @labourists: Add Labourists.
 - @military: Add Military Personnel.
-- @nonfactional: Add Unaligned advisors.
 - @psdmember: Add members of the PSD
 - @other: Add members of other parties.
 - @rm_main: Remove advisors instead.
@@ -99,7 +270,7 @@ frequency: 1
 @getulist
 view-if: n_advisors < 3
 
-- #getulist_advisor
+- #getulist_addvisor
 
 @reformist
 view-if: n_advisors < 3
@@ -121,11 +292,6 @@ view-if: n_advisors < 3
 
 - #military_advisor
 
-@nonfactional
-view-if: n_advisors < 3
-
-- #nonfactional_advisor
-
 @psdmember
 view-if: n_advisors < 3
 
@@ -141,7 +307,7 @@ view-if: n_advisors < 3
 title: Leonel Brizola
 subtitle: Leonel Brizola is the [? if month <= 3 and year = 1963 : current ?][? if month > 3 and year >= 1963 : former ?] governor of Rio Grande do Sul and a fierce defender of Vargas. He is also your brother-in-law. 
 is-card: true
-card-image: img/portraits/LeonelBrizola.png
+card-image: img/portraits/LeonelBrizola.jpg
 tags: brizolist_advisor
 view-if: brizola_advisor = 0 and n_advisors < 3
 on-arrival: brizola_advisor = 1; n_advisors += 1
@@ -149,11 +315,23 @@ go-to: advisor_menu
 
 Leonel Brizola is now an advisor. 
 
+@add_juliao
+title: Francisco Julião
+subtitle: add later
+is-card: true
+card-image: img/portraits/FranciscoJuliao.jpg
+tags: brizolist_advisor
+view-if: juliao_advisor = 0 and n_advisors < 3
+on-arrival: juliao_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Francisco Julião is now an advisor. 
+
 @add_tancredo
 title: Tancredo Neves
 subtitle: Tancredo Neves is a close ally in the PSD and the first Prime Minister.
 is-card: true
-card-image: img/portraits/TancredoNeves.png
+card-image: img/portraits/TancredoNeves.jpg
 tags: psd_advisor
 view-if: tancredo_advisor = 0 and n_advisors < 3
 on-arrival: tancredo_advisor = 1; n_advisors += 1
@@ -161,11 +339,59 @@ go-to: advisor_menu
 
 Tancredo Neves is now an advisor. 
 
+@add_ulysses
+title: Ulysses Guimarães
+subtitle: add later
+is-card: true
+card-image: img/portraits/UlyssesGuimaraes.jpg
+tags: psd_advisor
+view-if: ulysses_advisor = 0 and n_advisors < 3
+on-arrival: ulysses_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Ulysses Guimarães is now an advisor. 
+
+@add_juscelino
+title: Juscelino Kubitschek
+subtitle: add later
+is-card: true
+card-image: img/portraits/JuscelinoKubitschek.jpg
+tags: psd_advisor
+view-if: kubitschek_advisor = 0 and n_advisors < 3
+on-arrival: kubitschek_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Juscelino Kubitschek is now an advisor. 
+
+@add_andrade
+title: Auro de Moura Andrade
+subtitle: add later
+is-card: true
+card-image: img/portraits/AuroAndrade.jpg
+tags: psd_advisor
+view-if: andrade_advisor = 0 and n_advisors < 3
+on-arrival: andrade_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Auro de Moura Andrade is now an advisor. 
+
+@add_amaral
+title: Amaral Peixoto
+subtitle: add later
+is-card: true
+card-image: img/portraits/AmaralPeixoto.jpg
+tags: psd_advisor
+view-if: peixoto_advisor = 0 and n_advisors < 3
+on-arrival: peixoto_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Amaral Peixoto is now an advisor. 
+
 @add_kruel
 title: Amaury Kruel
 subtitle: Amaury Kruel is the current Minister of War.
 is-card: true
-card-image: img/portraits/AmauryKruel.png
+card-image: img/portraits/AmauryKruel.jpg
 tags: military_advisor
 view-if: kruel_advisor = 0 and n_advisors < 3
 on-arrival: kruel_advisor = 1; n_advisors += 1
@@ -177,7 +403,7 @@ Amaury Kruel is now an advisor.
 title: Henrique Teixeira Lott
 subtitle: Henrique Teixeira Lott is the head of the Legalist Movement.
 is-card: true
-card-image: img/portraits/HenriqueLott.png
+card-image: img/portraits/HenriqueLott.jpg
 tags: military_advisor
 view-if: lott_advisor = 0 and n_advisors < 3
 on-arrival: lott_advisor = 1; n_advisors += 1
@@ -185,11 +411,23 @@ go-to: advisor_menu
 
 Henrique Teixeira Lott is now an advisor. 
 
+@add_dantas
+title: Jair Dantas Ribeiro
+subtitle: add later
+is-card: true
+card-image: img/portraits/JairDantas.jpg
+tags: military_advisor
+view-if: dantas_advisor = 0 and n_advisors < 3
+on-arrival: dantas_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Jair Dantas Ribeiro is now an advisor. 
+
 @add_santiago
 title: San Tiago Dantas
 subtitle: San Tiago Dantas is the current Minister of Finance.
 is-card: true
-card-image: img/portraits/SanTiagoDanta.png
+card-image: img/portraits/SanTiagoDantas.jpg
 tags: labourist_advisor
 view-if: santiago_advisor = 0 and n_advisors < 3
 on-arrival: santiago_advisor = 1; n_advisors += 1
@@ -197,11 +435,35 @@ go-to: advisor_menu
 
 San Tiago Dantas is now an advisor. 
 
+@add_celso
+title: Celso Furtado
+subtitle: add later
+is-card: true
+card-image: img/portraits/CelsoFurtado.jpg
+tags: labourist_advisor
+view-if: furtado_advisor = 0 and n_advisors < 3
+on-arrival: furtado_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Celso Furtado is now an advisor. 
+
+@add_magalhaes
+title: Sergio Magalhães
+subtitle: add later
+is-card: true
+card-image: img/portraits/SergioMagalhaes.jpg
+tags: labourist_advisor
+view-if: magalhaes_advisor = 0 and n_advisors < 3
+on-arrival: magalhaes_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Sergio Magalhães is now an advisor. 
+
 @add_hermes
 title: Hermes Lima
 subtitle: Hermes Lima was the last Prime Minister of Brazil
 is-card: true
-card-image: img/portraits/HermesLima.png
+card-image: img/portraits/HermesLima.jpg
 tags: labourist_advisor
 view-if: hermes_advisor = 0 and n_advisors < 3
 on-arrival: hermes_advisor = 1; n_advisors += 1
@@ -210,57 +472,114 @@ go-to: advisor_menu
 Hermes Lima is now an advisor. 
 
 
-@add_biden
-title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance.
+@add_serra
+title: José Serra
+subtitle: add later
 is-card: true
-card-image: img/portraits/SanTiagoDanta.png
+card-image: img/portraits/JoseSerra.jpg
 tags: reformist_advisor
-view-if: santiago_advisor = 0 and n_advisors < 3
-on-arrival: santiago_advisor = 1; n_advisors += 1
+view-if: serra_advisor = 0 and n_advisors < 3
+on-arrival: serra_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-San Tiago Dantas is now an advisor. 
+José Serra is now an advisor. 
 
-
-@add_trump
-title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+@add_paiva
+title: Rubens Paiva
+subtitle: add later
 is-card: true
-card-image: img/portraits/SanTiagoDanta.png
-tags: nonfactional_advisor
-view-if: santiago_advisor = 0 and n_advisors < 3
-on-arrival: santiago_advisor = 1; n_advisors += 1
+card-image: img/portraits/RubensPaiva.jpg
+tags: reformist_advisor
+view-if: paiva_advisor = 0 and n_advisors < 3
+on-arrival: paiva_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-San Tiago Dantas is now an advisor. 
+Rubens Paiva is now an advisor. 
 
-
-@add_kamala
-title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+@add_oswaldo
+title: Oswaldo Lima Filho
+subtitle: add later
 is-card: true
-card-image: img/portraits/SanTiagoDanta.png
+card-image: img/portraits/OswaldoLima.jpg
+tags: reformist_advisor
+view-if: oswaldo_advisor = 0 and n_advisors < 3
+on-arrival: oswaldo_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Oswaldo Lima Filho is now an advisor. 
+
+
+@add_ivete
+title: Ivete Vargas
+subtitle: add later 
+is-card: true
+card-image: img/portraits/IveteVargas.jpg
 tags: getulist_advisor
-view-if: santiago_advisor = 0 and n_advisors < 3
-on-arrival: santiago_advisor = 1; n_advisors += 1
+view-if: ivete_advisor = 0 and n_advisors < 3
+on-arrival: ivete_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-San Tiago Dantas is now an advisor. 
+Ivete Vargas is now an advisor. 
 
-
-@add_walz
-title: San Tiago Dantas
-subtitle: San Tiago Dantas is the current Minister of Finance and a member of the 'moderate left.' He wishes to implement austerity programs all around the nation. {!<br><br>!}[? if difficulty < 0 : Actions - Media, Editorial Line, Cooperation with the KPD ?]
+@add_evandro
+title: Evandro Lins e Silva
+subtitle: add later 
 is-card: true
-card-image: img/portraits/SanTiagoDanta.png
-tags: other_advisor
-view-if: santiago_advisor = 0 and n_advisors < 3
-on-arrival: santiago_advisor = 1; n_advisors += 1
+card-image: img/portraits/EvandroLins.jpg
+tags: getulist_advisor
+view-if: evandro_advisor = 0 and n_advisors < 3
+on-arrival: evandro_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
-San Tiago Dantas is now an advisor. 
+Evandro Lins e Silva is now an advisor. 
 
+@add_prestes
+title: Luís Carlos Prestes
+subtitle: add later
+is-card: true
+card-image: img/portraits/LuisPrestes.jpg
+tags: other_advisor
+view-if: prestes_advisor = 0 and n_advisors < 3
+on-arrival: prestes_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Luís Carlos Prestes is now an advisor. 
+
+@add_darcy
+title:  Darcy Ribeiro
+subtitle: add later
+is-card: true
+card-image: img/portraits/DarcyRibeiro.jpg
+tags: other_advisor
+view-if: darcy_advisor = 0 and n_advisors < 3
+on-arrival: darcy_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Darcy Ribeiro is now an advisor. 
+
+@add_arraes
+title: Miguel Arraes
+subtitle: add later
+is-card: true
+card-image: img/portraits/MiguelArraes.jpg
+tags: other_advisor
+view-if: arraes_advisor = 0 and n_advisors < 3
+on-arrival: arraes_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Miguel Arraes is now an advisor. 
+
+@add_freire
+title: Paulo Freire
+subtitle: add later
+is-card: true
+card-image: img/portraits/PauloFreire.jpg
+tags: other_advisor
+view-if: freire_advisor = 0 and n_advisors < 3
+on-arrival: freire_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Paulo Freire is now an advisor. 
 
 
 

@@ -1,0 +1,12 @@
+title: Luis Carlos Prestes
+is-pinned-card: true 
+tags: advisor, other
+card-image: img/portraits/LuisPrestes.jpg
+new-page: true
+view-if: prestes_advisor = 1
+
+= Luis Carlos Prestes
+
+Luís Carlos Prestes is the general-secretary of the Brazilian Communist Party. [? if pcb_banned : Currently, the PCB is banned, leaving him to have to work within the PTB's boundaries ?][? if not pcb_banned : As a member of the PCB, he still holds a grudge towards Vargas and his ideology, but is willing to cooperate as we lifted the ban on his party. ?] 
+
+- @root: Return to main

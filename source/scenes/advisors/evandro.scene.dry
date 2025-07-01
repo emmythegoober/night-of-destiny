@@ -1,0 +1,12 @@
+title: Evandro Lins e Silva
+is-pinned-card: true 
+tags: advisor, getulist
+card-image: img/portraits/EvandroLins.jpg
+new-page: true
+view-if: evandro_advisor = 1
+
+= Evandro Lins e Silva
+
+Evandro Lins e Silva is your current Chief of Staff. He was with you during that fateful trip to China and you have plans to add him to the Supreme Court. 
+
+- @root: Return to main

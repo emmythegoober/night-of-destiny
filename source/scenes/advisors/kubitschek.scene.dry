@@ -1,0 +1,12 @@
+title: Juscelino Kubitschek
+is-pinned-card: true 
+tags: advisor, psd
+card-image: img/portraits/JuscelinoKubitschek.jpg
+new-page: true
+view-if: freire_advisor = 1
+
+= Juscelino Kubitschek
+
+Juscelino Kubitschek was President of Brazil between 1956 and 1961. He's a member of the PSD and your former boss. Your relation is amicable, and you share some of his policies, but there are a couple things that need ironing out. Still, he's a key ally to garner support from the PSD.
+
+- @root: Return to main

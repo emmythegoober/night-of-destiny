@@ -1,0 +1,12 @@
+title: Ivete Vargas
+is-pinned-card: true 
+tags: advisor, getulist
+card-image: img/portraits/IveteVargas.jpg
+new-page: true
+view-if: ivete_advisor = 1
+
+= Ivete Vargas
+
+Ivete Vargas is a federal deputy for São Paulo due to her relations with Getúlio. She was Brazil's ambassador to the UN in 1953. Under Kubitschek, she travelled through several socialist nations. She was the main organizer of the *Jan-Jan* movement that elected you and Quadros.
+
+- @root: Return to main

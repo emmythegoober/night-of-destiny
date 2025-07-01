@@ -1,0 +1,12 @@
+title: Paulo Freire
+is-pinned-card: true 
+tags: advisor, getulist
+card-image: img/portraits/PauloFreire.jpg
+new-page: true
+view-if: freire_advisor = 1
+
+= Paulo Freire
+
+Paulo Freire is one of the main Brazilian educators of our time. During an experiment in 1962, he taught three hundred sugar cane farmers how to read and write in forty-five days. As literacy remains a requirement to vote, his teachings prove ever so valuable.
+
+- @root: Return to main

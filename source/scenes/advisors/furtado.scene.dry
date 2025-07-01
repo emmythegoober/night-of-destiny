@@ -1,0 +1,12 @@
+title: Celso Furtado
+is-pinned-card: true 
+tags: advisor, labourist
+card-image: img/portraits/CelsoFurtado.jpg
+new-page: true
+view-if: furtado_advisor = 1
+
+= Celso Furtado
+
+Celso Furtado is your Minister of Planning and the mastermind behind the Plano Trienal. He is also currently the head of the SUDENE, a government-run development bank for the Northeast.
+
+- @root: Return to main
