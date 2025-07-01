@@ -270,7 +270,7 @@ frequency: 1
 @getulist
 view-if: n_advisors < 3
 
-- #getulist_addvisor
+- #getulist_advisor
 
 @reformist
 view-if: n_advisors < 3
