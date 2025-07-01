@@ -253,7 +253,7 @@ go-to: advisor_menu
 
 @advisor_menu
 title: Add other advisors.
-tags: getulist_addvisor, reformist_advisor, brizolist_advisor, labourist_advisor, military_advisor, psd_advisor, other_advisor
+tags: getulist_advisor, reformist_advisor, brizolist_advisor, labourist_advisor, military_advisor, psd_advisor, other_advisor
 frequency: 1
 
 
