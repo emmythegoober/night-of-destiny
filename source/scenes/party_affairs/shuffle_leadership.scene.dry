@@ -317,7 +317,7 @@ Leonel Brizola is now an advisor.
 
 @add_juliao
 title: Francisco Julião
-subtitle: add later
+subtitle: Francisco Julião is a federal deputy and a peasant's leader.
 is-card: true
 card-image: img/portraits/FranciscoJuliao.jpg
 tags: brizolist_advisor
@@ -341,7 +341,7 @@ Tancredo Neves is now an advisor.
 
 @add_ulysses
 title: Ulysses Guimarães
-subtitle: add later
+subtitle: Ulysses is a federal deputy and has close contacts with businesspeople.
 is-card: true
 card-image: img/portraits/UlyssesGuimaraes.jpg
 tags: psd_advisor
@@ -353,7 +353,7 @@ Ulysses Guimarães is now an advisor.
 
 @add_juscelino
 title: Juscelino Kubitschek
-subtitle: add later
+subtitle: Kubitschek is the former president of Brazil and a popular leader.
 is-card: true
 card-image: img/portraits/JuscelinoKubitschek.jpg
 tags: psd_advisor
@@ -365,7 +365,7 @@ Juscelino Kubitschek is now an advisor.
 
 @add_andrade
 title: Auro de Moura Andrade
-subtitle: add later
+subtitle: Auro de Moura Andrade is the president of the Senate and one slimy creature.
 is-card: true
 card-image: img/portraits/AuroAndrade.jpg
 tags: psd_advisor
@@ -377,7 +377,7 @@ Auro de Moura Andrade is now an advisor.
 
 @add_amaral
 title: Amaral Peixoto
-subtitle: add later
+subtitle: Peixoto is the former ambassador to the US and has good connections with them.
 is-card: true
 card-image: img/portraits/AmaralPeixoto.jpg
 tags: psd_advisor
@@ -389,7 +389,7 @@ Amaral Peixoto is now an advisor.
 
 @add_kruel
 title: Amaury Kruel
-subtitle: Amaury Kruel is the current Minister of War.
+subtitle: Amaury Kruel is a military general from the Legalist faction.
 is-card: true
 card-image: img/portraits/AmauryKruel.jpg
 tags: military_advisor
@@ -413,7 +413,7 @@ Henrique Teixeira Lott is now an advisor.
 
 @add_dantas
 title: Jair Dantas Ribeiro
-subtitle: add later
+subtitle: Jair Dantas Ribeiro is the Minister of the Navy and an important member of the dispositivo militar.
 is-card: true
 card-image: img/portraits/JairDantas.jpg
 tags: military_advisor
@@ -437,7 +437,7 @@ San Tiago Dantas is now an advisor.
 
 @add_celso
 title: Celso Furtado
-subtitle: add later
+subtitle: Celso Furtado is the head of the SUDENE and an economic mastermind.
 is-card: true
 card-image: img/portraits/CelsoFurtado.jpg
 tags: labourist_advisor
@@ -449,7 +449,7 @@ Celso Furtado is now an advisor.
 
 @add_magalhaes
 title: Sergio Magalhães
-subtitle: add later
+subtitle: Sergio Magalhães is a federal deputy and a founder of the Frente Parlamentar Nacionalista 
 is-card: true
 card-image: img/portraits/SergioMagalhaes.jpg
 tags: labourist_advisor
@@ -461,7 +461,7 @@ Sergio Magalhães is now an advisor.
 
 @add_hermes
 title: Hermes Lima
-subtitle: Hermes Lima was the last Prime Minister of Brazil
+subtitle: Hermes Lima was the last Prime Minister of Brazil.
 is-card: true
 card-image: img/portraits/HermesLima.jpg
 tags: labourist_advisor
@@ -474,7 +474,7 @@ Hermes Lima is now an advisor.
 
 @add_serra
 title: José Serra
-subtitle: add later
+subtitle: José Serra is the president of the União Nacional de Estudantes.
 is-card: true
 card-image: img/portraits/JoseSerra.jpg
 tags: reformist_advisor
@@ -486,7 +486,7 @@ José Serra is now an advisor.
 
 @add_paiva
 title: Rubens Paiva
-subtitle: add later
+subtitle: Rubens Paiva is a federal deputy and has connections with the state's landowners.
 is-card: true
 card-image: img/portraits/RubensPaiva.jpg
 tags: reformist_advisor
@@ -498,7 +498,7 @@ Rubens Paiva is now an advisor.
 
 @add_oswaldo
 title: Oswaldo Lima Filho
-subtitle: add later
+subtitle: Oswaldo Lima Filho is your Minister of Agriculture.
 is-card: true
 card-image: img/portraits/OswaldoLima.jpg
 tags: reformist_advisor
@@ -511,7 +511,7 @@ Oswaldo Lima Filho is now an advisor.
 
 @add_ivete
 title: Ivete Vargas
-subtitle: add later 
+subtitle: Ivete is a federal deputy and has close connections to the party's right. 
 is-card: true
 card-image: img/portraits/IveteVargas.jpg
 tags: getulist_advisor
@@ -523,7 +523,7 @@ Ivete Vargas is now an advisor.
 
 @add_evandro
 title: Evandro Lins e Silva
-subtitle: add later 
+subtitle: Evandro Lins e Silva is your current Chief of Staff. 
 is-card: true
 card-image: img/portraits/EvandroLins.jpg
 tags: getulist_advisor
@@ -535,7 +535,7 @@ Evandro Lins e Silva is now an advisor.
 
 @add_prestes
 title: Luís Carlos Prestes
-subtitle: add later
+subtitle: Prestes is an important communist leader and general-secretary of the banned PCB.
 is-card: true
 card-image: img/portraits/LuisPrestes.jpg
 tags: other_advisor
@@ -547,7 +547,7 @@ Luís Carlos Prestes is now an advisor.
 
 @add_darcy
 title:  Darcy Ribeiro
-subtitle: add later
+subtitle: Darcy Ribeiro is one of the fiercest defenders of indigenous rights.
 is-card: true
 card-image: img/portraits/DarcyRibeiro.jpg
 tags: other_advisor
@@ -559,7 +559,7 @@ Darcy Ribeiro is now an advisor.
 
 @add_arraes
 title: Miguel Arraes
-subtitle: add later
+subtitle: Miguel Arraes is the governor of Pernambuco and a proponent of agrarian reform.
 is-card: true
 card-image: img/portraits/MiguelArraes.jpg
 tags: other_advisor
@@ -571,7 +571,7 @@ Miguel Arraes is now an advisor.
 
 @add_freire
 title: Paulo Freire
-subtitle: add later
+subtitle: Freire is a Marxist educator seeking to revolutionize Brazilian education.
 is-card: true
 card-image: img/portraits/PauloFreire.jpg
 tags: other_advisor
