@@ -63,6 +63,8 @@ Q.centrists_resign = 0;
 Q.left_split = 0;
 Q.reformists_resigned = 0;
 
+// has santiago fallen?
+santiago_falls = 0;
 
 // forpol
 Q.american_support = 50;
@@ -322,6 +324,7 @@ Q.santiago_advisor = 1; // San Tiago Dantas
 Q.lott_advisor = 0; // Henrique Lott
 Q.dantas_advisor = 0; // Jair Dantas Ribeiro
 Q.kruel_advisor = 1; // Amaury Kruel
+Q.assis_advisor = 0; // Argemiro de Assis Brasil
 
 // other
 Q.prestes_advisor = 0; // Luís Carlos Prestes

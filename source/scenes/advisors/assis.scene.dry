@@ -1,0 +1,12 @@
+title: Argemiro de Assis Brasil
+is-pinned-card: true 
+tags: advisor, other
+card-image: img/portraits/AssisBrasil.jpg
+new-page: true
+view-if: assis_advisor = 1
+
+= Argemiro de Assis Brasil
+
+Miguel Arraes is the current governor of Pernambuco and a key member of the Brazilian Socialist Party (PSB). One of his main achievements is the *Acordo do Campo* which extends minimum wage legislation to rural workers.
+
+- @root: Return to main

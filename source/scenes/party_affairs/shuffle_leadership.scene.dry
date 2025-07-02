@@ -241,6 +241,15 @@ go-to: rm_main
 
 Brizola has been removed as an advisor. The Reformists disapprove of this choice.
 
+@remove_assis
+title: Remove Assis
+view-if: assis_advisor = 1
+on-arrival: assis_advisor = 0; n_advisors -= 1
+tags: remove_advisor
+go-to: rm_main
+
+Assis has been removed as an advisor.
+
 
 
 ####################### adding advisors
@@ -411,6 +420,18 @@ go-to: advisor_menu
 
 Henrique Teixeira Lott is now an advisor. 
 
+@add_assis
+title: Argemiro de Assis Brasil
+subtitle: Henrique Teixeira Lott is your Military Chief of Staff.
+is-card: true
+card-image: img/portraits/AssisBrasil.jpg
+tags: military_advisor
+view-if: assis_advisor = 0 and n_advisors < 3
+on-arrival: assis_advisor = 1; n_advisors += 1
+go-to: advisor_menu
+
+Argemiro de Assis Brasil is now an advisor. 
+
 @add_dantas
 title: Jair Dantas Ribeiro
 subtitle: Jair Dantas Ribeiro is the Minister of the Navy and an important member of the dispositivo militar.
@@ -429,7 +450,7 @@ subtitle: San Tiago Dantas is the current Minister of Finance.
 is-card: true
 card-image: img/portraits/SanTiagoDantas.jpg
 tags: labourist_advisor
-view-if: santiago_advisor = 0 and n_advisors < 3
+view-if: santiago_advisor = 0 and n_advisors < 3 and santiago_falls = 0
 on-arrival: santiago_advisor = 1; n_advisors += 1
 go-to: advisor_menu
 
