@@ -3,7 +3,7 @@ is-pinned-card: true
 tags: advisor, psd
 card-image: img/portraits/JuscelinoKubitschek.jpg
 new-page: true
-view-if: freire_advisor = 1
+view-if: kubitschek_advisor = 1
 
 = Juscelino Kubitschek
 
