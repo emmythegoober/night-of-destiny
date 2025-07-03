@@ -37,7 +37,7 @@ Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 70;
+Q.workers_ptb = 90;
 Q.workers_psd = 10;
 Q.workers_udn = 5;
 Q.workers_psp = 10;
@@ -125,7 +125,7 @@ Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 70;
+Q.workers_ptb = 90;
 Q.workers_psd = 10;
 Q.workers_udn = 5;
 Q.workers_psp = 10;
@@ -214,7 +214,7 @@ Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 70;
+Q.workers_ptb = 90;
 Q.workers_psd = 10;
 Q.workers_udn = 5;
 Q.workers_psp = 10;
