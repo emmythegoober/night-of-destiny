@@ -179,6 +179,8 @@ Immigrants: PTB: [+ immigrants_ptb_display +]%, PSD: [+ immigrants_psd_display +
 
 Support for the Administration: [+ pro_government +]%
 
+Congressional support: [+ congress_support +]%
+
 @forpol
 
 = Relations 
