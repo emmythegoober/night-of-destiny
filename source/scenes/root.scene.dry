@@ -23,6 +23,7 @@ Q.started = 1;
 Q.time = 1;
 Q.year = 1963;
 Q.month = 1;
+
 // how many actions have been taken this month?
 Q.month_actions = 0;
 
@@ -45,6 +46,9 @@ Q.next_election_time = 5;
 Q.resources = 2;
 // party dues
 Q.dues = 2;
+
+// corruption
+Q.corruption = 301;
 
 // the state of the party
 // overall dissent reduces every increase in party support.

@@ -84,6 +84,8 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Popular Representation Party (Integralists)">PRP</span>!}: [+ prp_relation : relationships +]
 
+Corruption [+ corruption : corruption +] 
+
 = Internal Factions of the PTB
 
 {!<span class="tooltip-text" title="The Getulists, or Bureocratic Getulists, are the bureaucrats that handle labor relations. They are centrists, interested in order and respecting the authorities.">Getulists</span>!} strength: [+ varguist_strength : strength +], dissent: [+ varguist_dissenth : dissent +]
