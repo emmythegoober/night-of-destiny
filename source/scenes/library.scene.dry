@@ -431,7 +431,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#344e41'> </div></td><td>!} PRP: {!</td><td>!} [+ prp_cd +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#d6ccc2'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#d6ccc2; outline: 2px; outline-style: solid;'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
 
 {!</table>!}
 

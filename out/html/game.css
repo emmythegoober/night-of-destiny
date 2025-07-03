@@ -559,6 +559,8 @@ table {
 }
 .seat.other {
     fill: #d6ccc2;
+    stroke: #000;
+    stroke-width: 1.5px;
 }
 
 
