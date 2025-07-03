@@ -123,7 +123,7 @@ Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
 Q.imigrants = 2; // immigrants
-Q.catholics = 4; // evangelicals (pentecostals mainly)
+Q.evangelical = 4; // evangelicals (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
