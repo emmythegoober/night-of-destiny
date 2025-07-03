@@ -1,0 +1,8 @@
+title: Test Card
+new-page: true
+is-card: true
+tags: govt_affairs, cabinet
+on-arrival: year += 2; month += 9
+card-image: img/portraits/jango_2.jpg
+frequency: 50
+max-visits: 6

@@ -1,0 +1,180 @@
+title: The General Election
+subtitle: As your presidency comes to a close, it's time for your final judgement.
+view-if: year = 1965 and month = 10 and presidential_election_seen = 0
+frequency: 1000
+max-visits: 1
+new-page: true
+on-arrival: brizola_campaign = 0; kubitschek_campaign 0; lacerda_campaign = 0; quadros_campaign = 0; presidential_election_seen = 1; next_election_year = next_election_year + 5;
+tags: event
+
+
+- @election_algorithm: Let the die be cast.
+
+@post_election_1965
+on-arrival: {!
+// set old results
+// election threshold constitutional reform
+// banning parties
+var new_party_sum = 0;
+for (var party of Q.parties) {
+    Q['old_' + party + '_r'] = Q[party + '_r'];
+    if (Q.constitutional_reform > 0) {
+        if (Q[party + '_votes'] < Q.electoral_threshold || (Q.electoral_threshold > 1 && party == 'other') || Q[party + '_banned']) {
+            Q[party + '_r'] = 0;
+        } else {
+            Q[party + '_r'] = Q[party + '_votes'];
+        }
+        new_party_sum += Q[party + '_r'];
+    } else {
+        Q[party + '_r'] = Q[party + '_votes'];
+    }
+    // if we use decimals, then we might want to truncate the numbers
+    if (Q.use_decimals) {
+        Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
+    }  else {
+            Q[party + '_r_disp'] = Q[party+'_r'];
+    }
+    Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
+    var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
+    Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
+}
+// calculate new party sum if electoral reform
+if (Q.electoral_threshold && Q.electoral_threshold > 0) {
+    for (var party of Q.parties) {
+        if (Q[party + '_r'] > 0) {
+            if (Q.use_decimals) {
+                Q[party + '_r'] = Math.round(Q[party + '_r']*1000/new_party_sum)/10;
+            } else {
+                Q[party + '_r'] = Math.round(Q[party + '_r']*100/new_party_sum);
+            }
+        }
+        if (Q.use_decimals) {
+            Q[party + '_r_disp'] = Q[party+'_r'].toFixed(1);
+        } else {
+            Q[party + '_r_disp'] = Q[party+'_r'];
+        }
+        Q['change_' + party + '_r'] = Q[party + '_r'] - Q['old_' + party + '_r'];
+        var sign = Q['change_' + party + '_r'] > 0 ? '+'  : '';
+        Q['str_change_' + party] = sign + Q['change_' + party + '_r'];//.toFixed(1);
+    }
+}
+
+// get change arrows and signs
+
+
+// The largest party can only be the NSDAP or the SPD.
+
+Q.largest_party = 'PTB';
+if (Q.udn_cd >= Q.ptb_cd && Q.udn_cd >= Q.ptb_cd) {
+    Q.largest_party = 'UDN';
+}
+
+if (Q.psp_cd >= Q.ptb_cd && Q.psp_cd >= Q.ptb_cd) {
+    Q.largest_party = 'PSP';
+}
+
+if (Q.psd_cd >= Q.ptb_cd && Q.psd_cd >= Q.ptb_cd) {
+    Q.largest_party = 'PSD';
+}
+
+
+var election_result = {'date': new Date(Q.year, Q.month - 1)};
+for (var party of Q.parties) {
+    election_result[party] = Q[party + '_r'];
+}
+Q.election_records.push(election_result);
+!}
+on-display: {!
+data = [
+    {
+        "id": "ptb",
+        "legend": "PTB",
+        "name": "PTB",
+        "seats": Math.round(Q.ptb_cd*4.09),
+    },
+    {
+        "id": "psd",
+        "legend": "PSD",
+        "name": "PSD",
+        "seats": Math.round(Q.psd_cd*4.09),
+    },
+    {
+        "id": "psp",
+        "legend": "PSP",
+        "name": "PSP",
+        "seats": Math.round(Q.psp_cd*4.09),
+    },
+    {
+        "id": "ptn",
+        "legend": "PTN",
+        "name": "PTN",
+        "seats": Math.round(Q.ptn_cd*4.09),
+    },
+    {
+        "id": "pdc",
+        "legend": "PDC",
+        "name": "PDC",
+        "seats": Math.round(Q.pdc_cd*4.09),
+    },
+    {
+        "id": "udn",
+        "legend": "UDN",
+        "name": "UDN",
+        "seats": Math.round(Q.udn_cd*4.09),
+    },
+    {
+        "id": "prp",
+        "legend": "PRP",
+        "name": "PRP",
+        "seats": Math.round(Q.prp_cd*4.09),
+    },
+    {
+        "id": "other",
+        "legend": "Other",
+        "name": "Other",
+        "seats": Math.round(Q.other_cd*4.09),
+    },
+];
+
+if (window && d3) {
+    var width = 500; 
+    var height = 500;
+    var screenWidth = document.getElementById('content').offsetWidth;
+    if (screenWidth < width - 50) {
+        width = screenWidth - 50; 
+        height = width;
+        document.getElementById("camara").style.height = screenWidth/2 + "px";
+    } 
+
+    var parliament = d3.parliament();
+    parliament.width(width).height(height).innerRadiusCoef(0.4);
+    parliament.enter.fromCenter(true).smallToBig(true);
+    parliament.exit.toCenter(false).bigToSmall(true);
+    d3.select("#camara").datum(data).call(parliament);
+}
+!}
+go-to: coalition_menu
+
+= Election results
+
+{!<svg id="camara" style="width: 500px; height: 250px;"> </svg>!}
+
+{!<table>!} 
+{!<tr><td>Party</td><td>Vote share</td><td>% Change</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#ef233c; outline: 2px; outline-style: solid;'> </div></td><td>!} **PTB:** {!</td><td>!} **[+ ptb_cd +]%** {!</td><td>!} **[+ str_change_ptb +]%** {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#ffba08'> </div></td> <td>!}PSD: {!</td><td>!} [+ psd_cd +]% {!</td><td>!} [+ str_change_psd +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#450920'> </div></td><td>!} PSP: {!</td><td>!} [+ psp_cd +]%  {!</td><td>!} [+ str_change_psp +]%  {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} PTN: {!</td><td>!} [+ ptn_cd +]%  {!</td><td>!} [+ str_change_ptb +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#036ab2'> </div></td><td>!} PDC: {!</td><td>!} [+ pdc_cd +]% {!</td><td>!} [+ str_change_pdc +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#2c118d'> </div></td><td>!} UDN: {!</td><td>!} [+ udn_cd +]% {!</td><td>!} [+ str_change_udn +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#344e41'> </div></td><td>!} PRP: {!</td><td>!} [+ prp_cd +] % {!</td><td>!} [+ str_change_prp +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#adb5bd'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td><td>!} [+ str_change_other +]% {!</td></tr>!}
+
+{!</table>!}
