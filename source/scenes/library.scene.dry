@@ -382,7 +382,7 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#a7c957'},
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#adb5bd'},
             {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});    lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
@@ -394,7 +394,7 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#a7c957'},
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#adb5bd'},
             {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
@@ -431,7 +431,7 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#344e41'> </div></td><td>!} PRP: {!</td><td>!} [+ prp_cd +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#a7c957'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#adb5bd'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
 
 {!</table>!}
 
