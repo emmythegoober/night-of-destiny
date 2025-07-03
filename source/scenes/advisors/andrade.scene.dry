@@ -17,7 +17,7 @@ title: Get him to do some favors for us
 subtitle: We can get Andrade to do some favors for us. We currently have [+ andrade_favors +] left.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if andrade_favors = 0 : We have exhausted our favors with Andrade ?] 
-on-arrival: advisor_action_timer = 6; pro_government += 2; psd_relation += 2; congress_support += 2; andrade_favors -= 2
+on-arrival: advisor_action_timer = 6; pro_government += 2; psd_relation += 2; congress_support += 2; andrade_favors -= 1
 
 We have used our connections with Andrade to improve support for the government. We now have [+ andrade_favors +] left.
 
