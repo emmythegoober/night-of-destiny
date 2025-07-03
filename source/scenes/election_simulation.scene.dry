@@ -13,7 +13,7 @@ Q.workers = 43; // urban workers
 Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
-Q.imigrants = 2; // immigrants
+Q.immigrants = 2; // immigrants
 Q.protestant = 4; // protestant (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
@@ -101,7 +101,7 @@ Q.workers = 43; // urban workers
 Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
-Q.imigrants = 2; // immigrants
+Q.immigrants = 2; // immigrants
 Q.protestant = 4; // protestant (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
@@ -190,7 +190,7 @@ Q.workers = 43; // urban workers
 Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
-Q.imigrants = 2; // immigrants
+Q.immigrants = 2; // immigrants
 Q.protestant = 4; // protestant (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
