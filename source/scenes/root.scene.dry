@@ -145,16 +145,16 @@ Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 80;
+Q.workers_ptb = 75;
 Q.workers_psd = 10;
 Q.workers_udn = 5;
-Q.workers_psp = 1;
+Q.workers_psp = 5;
 Q.workers_pdc = 1;
-Q.workers_ptn = 1;
+Q.workers_ptn = 2;
 Q.workers_prp = 1;
 Q.workers_other = 1;
 
-Q.business_ptb = 5;
+Q.business_ptb = 15;
 Q.business_psd = 35;
 Q.business_udn = 45;
 Q.business_psp = 5;
@@ -163,7 +163,7 @@ Q.business_ptn = 5;
 Q.business_prp = 1;
 Q.business_other = 5;
 
-Q.middle_ptb = 20;
+Q.middle_ptb = 30;
 Q.middle_psd = 50;
 Q.middle_udn = 10;
 Q.middle_psp = 5;
