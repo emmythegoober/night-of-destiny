@@ -14,7 +14,7 @@ Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
 Q.imigrants = 2; // immigrants
-Q.catholics = 4; // evangelicals (pentecostals mainly)
+Q.catholics = 4; // evangelical (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -32,7 +32,7 @@ Q.economic_growth = 6.6;
 Q.economic_expansion = 0;
 
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelical', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
@@ -102,7 +102,7 @@ Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
 Q.imigrants = 2; // immigrants
-Q.catholics = 4; // evangelicals (pentecostals mainly)
+Q.catholics = 4; // evangelical (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -120,7 +120,7 @@ Q.economic_growth = 6.6;
 Q.economic_expansion = 0;
 
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelical', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
@@ -191,7 +191,7 @@ Q.business = 12.5; // business people
 Q.middle = 17.5; // the middle KKKlass
 Q.rural = 53.5; // farm people
 Q.imigrants = 2; // immigrants
-Q.catholics = 4; // evangelicals (pentecostals mainly)
+Q.catholics = 4; // evangelical (pentecostals mainly)
 
 // unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
 
@@ -209,7 +209,7 @@ Q.economic_growth = 6.6;
 Q.economic_expansion = 0;
 
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelical', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group

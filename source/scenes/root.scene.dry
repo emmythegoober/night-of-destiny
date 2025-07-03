@@ -141,7 +141,7 @@ Q.economic_growth = 6.6;
 Q.economic_expansion = 0;
 
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelical', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
@@ -238,7 +238,6 @@ Q.military_loyalty = 0.45
 // State of the government
 Q.president = "Goulart";
 Q.president_party = "PTB";
-// starting chancellor: Wilhelm Marx
 Q.vice_president = "None";
 Q.vice_president_party = 'N/A';
 Q.ptb_in_presidency = 1;
