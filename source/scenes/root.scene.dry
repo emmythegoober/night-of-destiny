@@ -323,14 +323,14 @@ Q.oswaldo_advisor = 0; // Oswaldo Lima Filho
 
 // labourist advisors
 Q.hermes_advisor = 0; // Hermes Lima
-Q.furtado_advisor = 0; // Celso Furtado
+Q.furtado_advisor = 1; // Celso Furtado
 Q.magalhaes_advisor = 0; // Sergio Magalhães
 Q.santiago_advisor = 1; // San Tiago Dantas
 
 // military
 Q.lott_advisor = 0; // Henrique Lott
 Q.dantas_advisor = 0; // Jair Dantas Ribeiro
-Q.kruel_advisor = 1; // Amaury Kruel
+Q.kruel_advisor = 0; // Amaury Kruel
 Q.assis_advisor = 0; // Argemiro de Assis Brasil
 
 // other
