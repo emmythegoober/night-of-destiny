@@ -382,9 +382,8 @@ if (d3 && window) {
 
     var lines = d3.linegraph(false, false,
             Q.parties,
-            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#003049', 'psp': '#450920', 'pdc': '#ffa69e', 'ptn': '#000', 'prp': '#344e41', 'other': '#909090'},
-            {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
-    lines.width(width).height(400);
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#1a1a1e'},
+            {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});    lines.width(width).height(400);
     //var svg = lines(Q.election_records);
     if (Q.election_records.length > 0) {
         d3.select("#election_history").datum(Q.election_records).call(lines);
@@ -395,7 +394,7 @@ if (d3 && window) {
     if (!Q.historical_mode || Q.game_over) {
         var lines_2 = d3.linegraph(true, true,
             Q.parties,
-            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#003049', 'psp': '#450920', 'pdc': '#ffa69e', 'ptn': '#000', 'prp': '#344e41', 'other': '#909090'},
+            {'ptb': '#ef233c', 'psd': '#ffba08', 'udn': '#2c118d', 'psp': '#533e40', 'pdc': '#036ab2', 'ptn': '#000', 'prp': '#344e41', 'other': '#1a1a1e'},
             {'ptb': 'PTB', 'psd': 'PSD', 'udn': 'UDN', 'psp': 'PSP', 'pdc': 'PDC', 'ptn': 'PTN', 'prp': 'PRP', 'other': 'Others'});
         lines_2.width(width).height(400);
         d3.select("#party_support_history").datum(Q.party_support_records).call(lines_2);
@@ -424,15 +423,15 @@ if (d3 && window) {
 
 {!<tr><td><div class="box" style='background-color:#450920'> </div></td><td>!} PSP: {!</td><td>!} [+ psp_cd +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#ffa69e'> </div></td><td>!} PDC: {!</td><td>!} [+ pdc_cd +]% {!</td></tr>!}
-
 {!<tr><td><div class="box" style='background-color:#000'> </div></td><td>!} PTN: {!</td><td>!} [+ ptn_cd +]% {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#003049'> </div></td><td>!} UDN: {!</td><td>!} [+ udn_cd +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#036ab2'> </div></td><td>!} PDC: {!</td><td>!} [+ pdc_cd +]% {!</td></tr>!}
+
+{!<tr><td><div class="box" style='background-color:#2c118d'> </div></td><td>!} UDN: {!</td><td>!} [+ udn_cd +]% {!</td></tr>!}
 
 {!<tr><td><div class="box" style='background-color:#344e41'> </div></td><td>!} PRP: {!</td><td>!} [+ prp_cd +] % {!</td></tr>!}
 
-{!<tr><td><div class="box" style='background-color:#909090'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
+{!<tr><td><div class="box" style='background-color:#1a1a1e'> </div></td><td>!} Other parties: {!</td><td>!} [+ other_cd +]% {!</td></tr>!}
 
 {!</table>!}
 
