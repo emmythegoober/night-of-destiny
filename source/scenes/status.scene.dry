@@ -165,7 +165,6 @@ Others: [+ other_votes +]%
 
 **Detailed results for each demographic**
 
-
 Workers: PTB: [+ workers_ptb_display +]%, PSD: [+ workers_psd_display +]%, UDN: [+ workers_udn_display +]%, PSP: [+ workers_psp_display +]%, PDC: [+ workers_pdc_display +]%; PTN: [+ workers_ptn_display +]%, PRP: [+ workers_prp_display +]%, Others: [+ workers_other_display +]% 
 
 Business: PTB: [+ business_ptb_display +]%, PSD: [+ business_psd_display +]%, UDN: [+ business_udn_display +]%, PSP: [+ business_psp_display +]%, PDC: [+ business_pdc_display +]%; PTN: [+ business_ptn_display +]%, PRP: [+ business_prp_display +]%, Others: [+ business_other_display +]% 
@@ -174,9 +173,9 @@ Middle Class: PTB: [+ middle_ptb_display +]%, PSD: [+ middle_psd_display +]%, UD
 
 Rural: PTB: [+ rural_ptb_display +]%, PSD: [+ rural_psd_display +]%, UDN: [+ rural_udn_display +]%, PSP: [+ rural_psp_display +]%, PDC: [+ rural_pdc_display +]%; PTN: [+ rural_ptn_display +]%, PRP: [+ rural_prp_display +]%, Others: [+ rural_other_display +]% 
 
-Unemployed: PTB: [+ unemployed_ptb_display +]%, PSD: [+ unemployed_psd_display +]%, UDN: [+ unemployed_udn_display +]%, PSP: [+ unemployed_psp_display +]%, PDC: [+ unemployed_pdc_display +]%; PTN: [+ unemployed_ptn_display +]%, PRP: [+ unemployed_prp_display +]%, Others: [+ unemployed_other_display +]% 
+Evangelicals: PTB: [+ evangelicals_ptb_display +]%, PSD: [+ evangelicals_psd_display +]%, UDN: [+ evangelicals_udn_display +]%, PSP: [+ evangelicals_psp_display +]%, PDC: [+ evangelicals_pdc_display +]%; PTN: [+ evangelicals_ptn_display +]%, PRP: [+ evangelicals_prp_display +]%, Others: [+ evangelicals_other_display +]% 
 
-Catholics: PTB: [+ catholics_ptb_display +]%, PSD: [+ catholics_psd_display +]%, UDN: [+ catholics_udn_display +]%, PSP: [+ catholics_psp_display +]%, PDC: [+ catholics_pdc_display +]%; PTN: [+ catholics_ptn_display +]%, PRP: [+ catholics_prp_display +]%, Others: [+ catholics_other_display +]% 
+Immigrants: PTB: [+ immigrants_ptb_display +]%, PSD: [+ immigrants_psd_display +]%, UDN: [+ immigrants_udn_display +]%, PSP: [+ immigrants_psp_display +]%, PDC: [+ immigrants_pdc_display +]%; PTN: [+ immigrants_ptn_display +]%, PRP: [+ immigrants_prp_display +]%, Others: [+ immigrants_other_display +]% 
 
 Support for the Administration: [+ pro_government +]%
 

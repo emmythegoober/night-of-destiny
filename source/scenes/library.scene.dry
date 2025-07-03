@@ -122,7 +122,7 @@ Economic: [+ economic_minister +] ([+ economic_minister_party +])
 
 Industry: [+ industry_minister +] ([+ industry_minister_party +])
 
-Agriculture: [+ agriculture_minister +] ([+ agriculture_minister_party +])
+Planning: [+ planning_minister +] ([+ planning_minister_party +])
 
 
 @demographics
@@ -130,18 +130,17 @@ go-to: menu
 
 **Demographic Groups**
 
-**Working Class**: The urban working class - blue-collar workers in factories, workshops, mines, and the like. Most are socialist, supporting either the SPD or KPD. They make up 40-50% of the population.
+**Working Class**: The urban working class. This is the PTB's base, a party created specifically to divide the communists from the unions. They make up 40-45% of the population
 
-**Business**: The old middle class consists of independent artisans, shopkeepers, and small-time businesspeople. They tend to be conservative and are the strongest base for the far right. 10-15% of the population.
+**Business**: The business class is small, but incredibly influential. They support both the PSD and the UDN. 10-15% of the population.
 
-**Middle Class**: The new middle class consists of white-collar workers and government employees. This is the base of liberalism. 10-15% of the population.
+**Middle Class**: The middle class consists of white-collar workers and government employees. This is the PSD's base. 15-20% of the population.
 
-**Rural**: Small and large farmers and independent rural workers. Protestant farmers often support the DNVP. 20-30% of the population.
+**Rural**: Small and large farmers and independent rural workers. They usually support right-wing parties. 50-55% of the population.
 
-**Catholics** are the largest religious minority, at about 30% of the population. They disproportionately support the Center Party (or the Bavarian People's Party in Bavaria).
+**Evangelicals** are the largest religious minority in the country. They represent 4% of the population but their numbers are growing by the day. They vote disproportionally for the UDN.
 
-**Immigrants** account for between 0.5% to 1% of the population, and tend to support liberal parties, mostly the DDP, although substantial numbers support the SPD or KPD.
-
+**Immigrants** account for between 1 and 3% of the population, and tend to support leftist parties, mostly the PTB.
 
 @public_opinion
 on-arrival: {!
@@ -203,9 +202,9 @@ Middle Class: PTB: [+ middle_ptb_display +]%, PSD: [+ middle_psd_display +]%, UD
 
 Rural: PTB: [+ rural_ptb_display +]%, PSD: [+ rural_psd_display +]%, UDN: [+ rural_udn_display +]%, PSP: [+ rural_psp_display +]%, PDC: [+ rural_pdc_display +]%; PTN: [+ rural_ptn_display +]%, PRP: [+ rural_prp_display +]%, Others: [+ rural_other_display +]% 
 
-Unemployed: PTB: [+ unemployed_ptb_display +]%, PSD: [+ unemployed_psd_display +]%, UDN: [+ unemployed_udn_display +]%, PSP: [+ unemployed_psp_display +]%, PDC: [+ unemployed_pdc_display +]%; PTN: [+ unemployed_ptn_display +]%, PRP: [+ unemployed_prp_display +]%, Others: [+ unemployed_other_display +]% 
+Evangelicals: PTB: [+ evangelicals_ptb_display +]%, PSD: [+ evangelicals_psd_display +]%, UDN: [+ evangelicals_udn_display +]%, PSP: [+ evangelicals_psp_display +]%, PDC: [+ evangelicals_pdc_display +]%; PTN: [+ evangelicals_ptn_display +]%, PRP: [+ evangelicals_prp_display +]%, Others: [+ evangelicals_other_display +]% 
 
-Catholics: PTB: [+ catholics_ptb_display +]%, PSD: [+ catholics_psd_display +]%, UDN: [+ catholics_udn_display +]%, PSP: [+ catholics_psp_display +]%, PDC: [+ catholics_pdc_display +]%; PTN: [+ catholics_ptn_display +]%, PRP: [+ catholics_prp_display +]%, Others: [+ catholics_other_display +]% 
+Immigrants: PTB: [+ immigrants_ptb_display +]%, PSD: [+ immigrants_psd_display +]%, UDN: [+ immigrants_udn_display +]%, PSP: [+ immigrants_psp_display +]%, PDC: [+ immigrants_pdc_display +]%; PTN: [+ immigrants_ptn_display +]%, PRP: [+ immigrants_prp_display +]%, Others: [+ immigrants_other_display +]% 
 
 
 @parties
