@@ -1,10 +1,10 @@
 title: The General Election
 subtitle: As your presidency comes to a close, it's time for your final judgement.
-view-if: year = 1965 and month = 10 and presidential_election_seen = 0
+view-if: year = 1965 and month = 10 and (not military_presidency = 1)
 frequency: 1000
 max-visits: 1
 new-page: true
-on-arrival: brizola_campaign = 0; kubitschek_campaign 0; lacerda_campaign = 0; quadros_campaign = 0; presidential_election_seen = 1; next_election_year = next_election_year + 5;
+on-arrival: presidential_election_seen = 1; next_election_year = next_election_year + 5;
 tags: event
 
 
