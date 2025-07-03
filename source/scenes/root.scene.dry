@@ -163,8 +163,8 @@ Q.business_ptn = 5;
 Q.business_prp = 1;
 Q.business_other = 5;
 
-Q.middle_ptb = 10;
-Q.middle_psd = 60;
+Q.middle_ptb = 20;
+Q.middle_psd = 50;
 Q.middle_udn = 10;
 Q.middle_psp = 5;
 Q.middle_pdc = 5;
@@ -190,8 +190,8 @@ Q.protestant_ptn = 12;
 Q.protestant_prp = 3;
 Q.protestant_other = 5;
 
-Q.immigrants_ptb = 40;
-Q.immigrants_psd = 30;
+Q.immigrants_ptb = 50;
+Q.immigrants_psd = 20;
 Q.immigrants_udn = 10;
 Q.immigrants_psp = 5;
 Q.immigrants_pdc = 2;
