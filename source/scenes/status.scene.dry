@@ -84,7 +84,7 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!<span class="tooltip-text" title="Popular Representation Party (Integralists)">PRP</span>!}: [+ prp_relation : relationships +]
 
-Corruption [+ corruption : corruption +] 
+Corruption **[+ corruption : corruption +]** 
 
 = Internal Factions of the PTB
 
