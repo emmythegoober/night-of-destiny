@@ -173,7 +173,7 @@ Middle Class: PTB: [+ middle_ptb_display +]%, PSD: [+ middle_psd_display +]%, UD
 
 Rural: PTB: [+ rural_ptb_display +]%, PSD: [+ rural_psd_display +]%, UDN: [+ rural_udn_display +]%, PSP: [+ rural_psp_display +]%, PDC: [+ rural_pdc_display +]%; PTN: [+ rural_ptn_display +]%, PRP: [+ rural_prp_display +]%, Others: [+ rural_other_display +]% 
 
-Evangelicals: PTB: [+ evangelicals_ptb_display +]%, PSD: [+ evangelicals_psd_display +]%, UDN: [+ evangelicals_udn_display +]%, PSP: [+ evangelicals_psp_display +]%, PDC: [+ evangelicals_pdc_display +]%; PTN: [+ evangelicals_ptn_display +]%, PRP: [+ evangelicals_prp_display +]%, Others: [+ evangelicals_other_display +]% 
+Evangelicals: PTB: [+ evangelical_ptb_display +]%, PSD: [+ evangelical_psd_display +]%, UDN: [+ evangelical_udn_display +]%, PSP: [+ evangelical_psp_display +]%, PDC: [+ evangelical_pdc_display +]%; PTN: [+ evangelical_ptn_display +]%, PRP: [+ evangelical_prp_display +]%, Others: [+ evangelical_other_display +]% 
 
 Immigrants: PTB: [+ immigrants_ptb_display +]%, PSD: [+ immigrants_psd_display +]%, UDN: [+ immigrants_udn_display +]%, PSP: [+ immigrants_psp_display +]%, PDC: [+ immigrants_pdc_display +]%; PTN: [+ immigrants_ptn_display +]%, PRP: [+ immigrants_prp_display +]%, Others: [+ immigrants_other_display +]% 
 
