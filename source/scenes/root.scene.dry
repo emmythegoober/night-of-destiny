@@ -113,6 +113,8 @@ Q.coup = 12;
 Q.socialism = 28;
 // pro-government vs anti-government
 Q.pro_government = 59;
+// congressional support
+Q.congress_support = 53;
 
 Q.budget = 4;
 
@@ -276,8 +278,10 @@ Q.industry_minister_party = 'PSD';
 Q.planning_minister = 'Furtado';
 Q.planning_minister_party = 'PTB';
 
+// how many favors we have with andrade?
+Q.andrade_favors = 5
 
-// important goulart timers
+// important goulart events
 Q.comicio_da_central = 0;
 Q.marcha_da_familia = 0;
 

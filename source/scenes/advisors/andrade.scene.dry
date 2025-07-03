@@ -9,5 +9,15 @@ view-if: andrade_advisor = 1
 
  Auro de Moura Andrade is the current President of the Senate. He is a member of the PSD and a slimy person. When Quadros resigned, he was the one that declared the presidency vacant instead of transferring it to you. But you might need him this time.
 
- 
+- @favors 
 - @root: Return to main
+
+@favors
+title: Get him to do some favors for us
+subtitle: We can get Andrade to do some favors for us. We currently have [+ andrade_favors +] left.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if andrade_favors = 0 : We have exhausted our favors with Andrade ?] 
+on-arrival: advisor_action_timer = 6; pro_government += 2; psd_relation += 2; congress_support += 2; andrade_favors -= 2
+
+We have used our connections with Andrade to improve support for the government. We now have [+ andrade_favors +] left.
+

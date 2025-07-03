@@ -147,6 +147,7 @@ on-arrival: {!
 Q.coup_disp = Math.round(Q.coup);
 Q.pro_government_disp = Math.round(Q.pro_government);
 Q.socialism_disp = Math.round(Q.socialism);
+Q.congress_disp = Math.round(Q.congress_support);
 !}
 view-if: (not historical_mode) or game_over
 go-to: election_algorithm
@@ -159,6 +160,8 @@ set-jump: election_projections
 #Support for a Coup: [+ coup +]%
 
 Support for the Government: [+ pro_government +]%
+
+Congressional support for the Government: [+ congress_disp +]%
 
 
 @election_projections
