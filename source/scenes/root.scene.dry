@@ -35,6 +35,12 @@ Q.old_demographics = 0;
 // TODO: not yet implemented
 Q.use_decimals = 0;
 
+// elections are not on a timer, but rather there is an indicator for whether you're in an electoral cycle.
+Q.in_election = 1;
+Q.next_election_year = 1965;
+Q.next_election_month = 10;
+Q.next_election_time = 5;
+
 // party resources
 Q.resources = 2;
 // party dues
