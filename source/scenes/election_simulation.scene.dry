@@ -8,142 +8,176 @@ set-jump: post_election
 
 @1928
 on-arrival: {!
-Q.workers = 45; // urban workers
-Q.business = 12; // business people
-Q.middle = 14; // the middle KKKlass
-Q.rural = 32; // farm people
-Q.unemployed = 7.6;
-Q.catholics = 85; // in the MOST CATHOLIC NATION IN THE WORLD you should listen to them
+// these are mostly estimations based on IBGE data - i read way too much census data
+Q.workers = 43; // urban workers
+Q.business = 12.5; // business people
+Q.middle = 17.5; // the middle KKKlass
+Q.rural = 53.5; // farm people
+Q.imigrants = 2; // immigrants
+Q.catholics = 4; // evangelicals (pentecostals mainly)
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'unemployed', 'catholics'];
+// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+
+// income for industrial workers in reichsmarks/year - 1963 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
+Q.income = 1600;
+// what about incomes for different classes? rural workers? middle-class workers?
+
+// inflation source: http://almanaque.folha.uol.com.br/dinheiro60.htm
+Q.inflation = 50.1;
+
+// economic growth - source: https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/td569.pdf
+Q.economic_growth = 6.6;
+
+// economic expansion timer
+Q.economic_expansion = 0;
+
+
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 60;
-Q.workers_psd = 20;
+Q.workers_ptb = 70;
+Q.workers_psd = 10;
 Q.workers_udn = 5;
-Q.workers_psp = 0;
-Q.workers_pdc = 0;
+Q.workers_psp = 10;
+Q.workers_pdc = 5;
 Q.workers_ptn = 5;
 Q.workers_prp = 0;
-Q.workers_other = 10;
+Q.workers_other = 5;
 
 Q.business_ptb = 5;
-Q.business_psd = 0;
-Q.business_udn = 5;
-Q.business_psp = 10;
-Q.business_pdc = 25;
-Q.business_ptn = 25;
-Q.business_prp = 10;
-Q.business_other = 10;
+Q.business_psd = 35;
+Q.business_udn = 45;
+Q.business_psp = 5;
+Q.business_pdc = 0;
+Q.business_ptn = 5;
+Q.business_prp = 0;
+Q.business_other = 5;
 
-Q.middle_ptb = 5;
-Q.middle_psd = 1;
+Q.middle_ptb = 10;
+Q.middle_psd = 60;
 Q.middle_udn = 10;
-Q.middle_psp = 25;
-Q.middle_pdc = 25;
-Q.middle_ptn = 10;
-Q.middle_prp = 5;
-Q.middle_other = 15;
+Q.middle_psp = 5;
+Q.middle_pdc = 5;
+Q.middle_ptn = 5;
+Q.middle_prp = 0;
+Q.middle_other = 0;
 
 Q.rural_ptb = 10;
-Q.rural_psd = 0;
-Q.rural_udn = 5;
-Q.rural_psp= 5;
-Q.rural_pdc = 15;
-Q.rural_ptn = 45;
-Q.rural_prp = 5;
-Q.rural_other = 10;
+Q.rural_psd = 10;
+Q.rural_udn = 60;
+Q.rural_psp= 0;
+Q.rural_pdc = 5;
+Q.rural_ptn = 10;
+Q.rural_prp = 3;
+Q.rural_other = 2;
 
-Q.unemployed_ptb = 25;
-Q.unemployed_psd = 55;
-Q.unemployed_udn = 1;
-Q.unemployed_psp = 0;
-Q.unemployed_pdc = 0;
-Q.unemployed_ptn = 5;
-Q.unemployed_prp = 15;
-Q.unemployed_other = 9;
+Q.evangelical_ptb = 5;
+Q.evangelical_psd = 15;
+Q.evangelical_udn = 50;
+Q.evangelical_psp = 10;
+Q.evangelical_pdc = 10;
+Q.evangelical_ptn = 12;
+Q.evangelical_prp = 3;
+Q.evangelical_other = 5;
 
-Q.catholics_ptb = 15;
-Q.catholics_psd = 2;
-Q.catholics_udn = 50;
-Q.catholics_psp = 0;
-Q.catholics_pdc = 5;
-Q.catholics_ptn = 5;
-Q.catholics_prp = 0;
-Q.catholics_other = 12;
+Q.immigrants_ptb = 40;
+Q.immigrants_psd = 30;
+Q.immigrants_udn = 10;
+Q.immigrants_psp = 5;
+Q.immigrants_pdc = 2;
+Q.immigrants_ptn = 5;
+Q.immigrants_prp = 3;
+Q.immigrants_other = 5;
 !}
 go-to: election_algorithm
 set-jump: post_election
 
 @1930
 on-arrival: {!
-Q.workers = 45; // urban workers
-Q.business = 12; // business people
-Q.middle = 14; // the middle KKKlass
-Q.rural = 32; // farm people
-Q.unemployed = 7.6;
-Q.catholics = 85; // in the MOST CATHOLIC NATION IN THE WORLD you should listen to them
+// these are mostly estimations based on IBGE data - i read way too much census data
+Q.workers = 43; // urban workers
+Q.business = 12.5; // business people
+Q.middle = 17.5; // the middle KKKlass
+Q.rural = 53.5; // farm people
+Q.imigrants = 2; // immigrants
+Q.catholics = 4; // evangelicals (pentecostals mainly)
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'unemployed', 'catholics'];
+// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+
+// income for industrial workers in reichsmarks/year - 1963 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
+Q.income = 1600;
+// what about incomes for different classes? rural workers? middle-class workers?
+
+// inflation source: http://almanaque.folha.uol.com.br/dinheiro60.htm
+Q.inflation = 50.1;
+
+// economic growth - source: https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/td569.pdf
+Q.economic_growth = 6.6;
+
+// economic expansion timer
+Q.economic_expansion = 0;
+
+
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 60;
-Q.workers_psd = 20;
+Q.workers_ptb = 70;
+Q.workers_psd = 10;
 Q.workers_udn = 5;
-Q.workers_psp = 0;
-Q.workers_pdc = 0;
+Q.workers_psp = 10;
+Q.workers_pdc = 5;
 Q.workers_ptn = 5;
 Q.workers_prp = 0;
-Q.workers_other = 10;
+Q.workers_other = 5;
 
 Q.business_ptb = 5;
-Q.business_psd = 0;
-Q.business_udn = 5;
-Q.business_psp = 10;
-Q.business_pdc = 25;
-Q.business_ptn = 25;
-Q.business_prp = 10;
-Q.business_other = 10;
+Q.business_psd = 35;
+Q.business_udn = 45;
+Q.business_psp = 5;
+Q.business_pdc = 0;
+Q.business_ptn = 5;
+Q.business_prp = 0;
+Q.business_other = 5;
 
-Q.middle_ptb = 5;
-Q.middle_psd = 1;
+Q.middle_ptb = 10;
+Q.middle_psd = 60;
 Q.middle_udn = 10;
-Q.middle_psp = 25;
-Q.middle_pdc = 25;
-Q.middle_ptn = 10;
-Q.middle_prp = 5;
-Q.middle_other = 15;
+Q.middle_psp = 5;
+Q.middle_pdc = 5;
+Q.middle_ptn = 5;
+Q.middle_prp = 0;
+Q.middle_other = 0;
 
 Q.rural_ptb = 10;
-Q.rural_psd = 0;
-Q.rural_udn = 5;
-Q.rural_psp= 5;
-Q.rural_pdc = 15;
-Q.rural_ptn = 45;
-Q.rural_prp = 5;
-Q.rural_other = 10;
+Q.rural_psd = 10;
+Q.rural_udn = 60;
+Q.rural_psp= 0;
+Q.rural_pdc = 5;
+Q.rural_ptn = 10;
+Q.rural_prp = 3;
+Q.rural_other = 2;
 
-Q.unemployed_ptb = 25;
-Q.unemployed_psd = 55;
-Q.unemployed_udn = 1;
-Q.unemployed_psp = 0;
-Q.unemployed_pdc = 0;
-Q.unemployed_ptn = 5;
-Q.unemployed_prp = 15;
-Q.unemployed_other = 9;
+Q.evangelical_ptb = 5;
+Q.evangelical_psd = 15;
+Q.evangelical_udn = 50;
+Q.evangelical_psp = 10;
+Q.evangelical_pdc = 10;
+Q.evangelical_ptn = 12;
+Q.evangelical_prp = 3;
+Q.evangelical_other = 5;
 
-Q.catholics_ptb = 15;
-Q.catholics_psd = 2;
-Q.catholics_udn = 50;
-Q.catholics_psp = 0;
-Q.catholics_pdc = 5;
-Q.catholics_ptn = 5;
-Q.catholics_prp = 0;
-Q.catholics_other = 12;
+Q.immigrants_ptb = 40;
+Q.immigrants_psd = 30;
+Q.immigrants_udn = 10;
+Q.immigrants_psp = 5;
+Q.immigrants_pdc = 2;
+Q.immigrants_ptn = 5;
+Q.immigrants_prp = 3;
+Q.immigrants_other = 5;
 !}
 
 go-to: election_algorithm
@@ -151,71 +185,88 @@ set-jump: post_election
 
 @1932
 on-arrival: {!
-Q.workers = 45; // urban workers
-Q.business = 12; // business people
-Q.middle = 14; // the middle KKKlass
-Q.rural = 32; // farm people
-Q.unemployed = 7.6;
-Q.catholics = 85; // in the MOST CATHOLIC NATION IN THE WORLD you should listen to them
+// these are mostly estimations based on IBGE data - i read way too much census data
+Q.workers = 43; // urban workers
+Q.business = 12.5; // business people
+Q.middle = 17.5; // the middle KKKlass
+Q.rural = 53.5; // farm people
+Q.imigrants = 2; // immigrants
+Q.catholics = 4; // evangelicals (pentecostals mainly)
 
-Q.classes = ['workers', 'business', 'middle', 'rural', 'unemployed', 'catholics'];
+// unemployment: 1929 - 13.3, 1930 - 22.7, 1931 - 34.3, 1932 - 43.8 (same source as above)
+
+// income for industrial workers in reichsmarks/year - 1963 = 1600 Reichsmarks/year; 1931 = 1440 Reichsmarks/year; 1933 = 1138 Reichsmarks/year - source: https://babel.hathitrust.org/cgi/pt?id=uiug.30112104147985&seq=50
+Q.income = 1600;
+// what about incomes for different classes? rural workers? middle-class workers?
+
+// inflation source: http://almanaque.folha.uol.com.br/dinheiro60.htm
+Q.inflation = 50.1;
+
+// economic growth - source: https://www.econ.puc-rio.br/uploads/adm/trabalhos/files/td569.pdf
+Q.economic_growth = 6.6;
+
+// economic expansion timer
+Q.economic_expansion = 0;
+
+
+Q.classes = ['workers', 'business', 'middle', 'rural', 'evangelicals', 'immigrants'];
 Q.parties = ['ptb', 'psd', 'udn', 'psp', 'pdc', 'ptn', 'prp', 'other'];
 
 // Support for party by social group
 // they don't have to sum to 100 since the electoral calculations will be normalized.
-Q.workers_ptb = 60;
-Q.workers_psd = 20;
+Q.workers_ptb = 70;
+Q.workers_psd = 10;
 Q.workers_udn = 5;
-Q.workers_psp = 0;
-Q.workers_pdc = 0;
+Q.workers_psp = 10;
+Q.workers_pdc = 5;
 Q.workers_ptn = 5;
 Q.workers_prp = 0;
-Q.workers_other = 10;
+Q.workers_other = 5;
 
 Q.business_ptb = 5;
-Q.business_psd = 0;
-Q.business_udn = 5;
-Q.business_psp = 10;
-Q.business_pdc = 25;
-Q.business_ptn = 25;
-Q.business_prp = 10;
-Q.business_other = 10;
+Q.business_psd = 35;
+Q.business_udn = 45;
+Q.business_psp = 5;
+Q.business_pdc = 0;
+Q.business_ptn = 5;
+Q.business_prp = 0;
+Q.business_other = 5;
 
-Q.middle_ptb = 5;
-Q.middle_psd = 1;
+Q.middle_ptb = 10;
+Q.middle_psd = 60;
 Q.middle_udn = 10;
-Q.middle_psp = 25;
-Q.middle_pdc = 25;
-Q.middle_ptn = 10;
-Q.middle_prp = 5;
-Q.middle_other = 15;
+Q.middle_psp = 5;
+Q.middle_pdc = 5;
+Q.middle_ptn = 5;
+Q.middle_prp = 0;
+Q.middle_other = 0;
 
 Q.rural_ptb = 10;
-Q.rural_psd = 0;
-Q.rural_udn = 5;
-Q.rural_psp= 5;
-Q.rural_pdc = 15;
-Q.rural_ptn = 45;
-Q.rural_prp = 5;
-Q.rural_other = 10;
+Q.rural_psd = 10;
+Q.rural_udn = 60;
+Q.rural_psp= 0;
+Q.rural_pdc = 5;
+Q.rural_ptn = 10;
+Q.rural_prp = 3;
+Q.rural_other = 2;
 
-Q.unemployed_ptb = 25;
-Q.unemployed_psd = 55;
-Q.unemployed_udn = 1;
-Q.unemployed_psp = 0;
-Q.unemployed_pdc = 0;
-Q.unemployed_ptn = 5;
-Q.unemployed_prp = 15;
-Q.unemployed_other = 9;
+Q.evangelical_ptb = 5;
+Q.evangelical_psd = 15;
+Q.evangelical_udn = 50;
+Q.evangelical_psp = 10;
+Q.evangelical_pdc = 10;
+Q.evangelical_ptn = 12;
+Q.evangelical_prp = 3;
+Q.evangelical_other = 5;
 
-Q.catholics_ptb = 15;
-Q.catholics_psd = 2;
-Q.catholics_udn = 50;
-Q.catholics_psp = 0;
-Q.catholics_pdc = 5;
-Q.catholics_ptn = 5;
-Q.catholics_prp = 0;
-Q.catholics_other = 12;
+Q.immigrants_ptb = 40;
+Q.immigrants_psd = 30;
+Q.immigrants_udn = 10;
+Q.immigrants_psp = 5;
+Q.immigrants_pdc = 2;
+Q.immigrants_ptn = 5;
+Q.immigrants_prp = 3;
+Q.immigrants_other = 5;
 !}
 go-to: election_algorithm
 set-jump: post_election
