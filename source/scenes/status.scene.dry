@@ -179,9 +179,9 @@ Protestants: PTB: [+ protestant_ptb_display +]%, PSD: [+ protestant_psd_display 
 
 Immigrants: PTB: [+ immigrants_ptb_display +]%, PSD: [+ immigrants_psd_display +]%, UDN: [+ immigrants_udn_display +]%, PSP: [+ immigrants_psp_display +]%, PDC: [+ immigrants_pdc_display +]%; PTN: [+ immigrants_ptn_display +]%, PRP: [+ immigrants_prp_display +]%, Others: [+ immigrants_other_display +]% 
 
-Support for the Administration: [+ pro_government +]%
+Popular Support for the Administration: [+ pro_government +]%
 
-Congressional support: [+ congress_support +]%
+Congressional Support for the Administration: [+ congress_support +]%
 
 @forpol
 

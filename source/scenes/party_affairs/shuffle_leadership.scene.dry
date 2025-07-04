@@ -374,7 +374,7 @@ Juscelino Kubitschek is now an advisor.
 
 @add_andrade
 title: Auro de Moura Andrade
-subtitle: Auro de Moura Andrade is the president of the Senate and one slimy creature.
+subtitle: Auro de Moura Andrade is the president of the Senate and one slimy creature.{!<br><br>!}[? if difficulty < 0 : Actions -  Use Our Favors, Pass Minor Legislation, Demand Congressional Loyalty ?]
 is-card: true
 card-image: img/portraits/AuroAndrade.jpg
 tags: psd_advisor

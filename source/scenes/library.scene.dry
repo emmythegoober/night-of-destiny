@@ -159,9 +159,9 @@ set-jump: election_projections
 
 #Support for a Coup: [+ coup +]%
 
-Support for the Government: [+ pro_government +]%
+Popular Support for the Government: [+ pro_government +]%
 
-Congressional support for the Government: [+ congress_disp +]%
+Congressional Support for the Government: [+ congress_disp +]%
 
 
 @election_projections

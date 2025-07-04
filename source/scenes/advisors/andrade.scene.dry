@@ -10,10 +10,12 @@ view-if: andrade_advisor = 1
  Auro de Moura Andrade is the current President of the Senate. He is a member of the PSD and a slimy person. When Quadros resigned, he was the one that declared the presidency vacant instead of transferring it to you. But you might need him this time.
 
 - @favors 
+- @legislative
+- @calmdown
 - @root: Return to main
 
 @favors
-title: Get him to do some favors for us
+title: Use Our Favors
 subtitle: We can get Andrade to do some favors for us. We currently have [+ andrade_favors +] favors left.
 choose-if: advisor_action_timer <= 0
 unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] [? if andrade_favors = 0 : We have exhausted our favors with Andrade ?] 
@@ -21,3 +23,19 @@ on-arrival: advisor_action_timer = 3; pro_government += 2; psd_relation += 2; co
 
 We have used our connections with Andrade to improve support for the government. Corruption has increased. We now have [+ andrade_favors +] favors left.
 
+@legislative
+title: Pass Minor Legislation
+subtitle: Passing some irrelevant pro-PSD legislation will get us some favors with Andrade and the PSD. 
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?] 
+on-arrival: advisor_action_timer = 3; psd_relation += 4; congress_support += 5; pro_government -= 4; labor_dissent += 5; andrade_favors += 2
+
+We have gained two favors with Andrade and improved our congressional support and our relations with the PSD. **The people** and the Labourists grow angrier.
+@calmdown
+title: Demand Congressional Loyalty
+subtitle: We will demand that Andrade stay in line or face the wrath of the people.
+choose-if: calm_down_timer <= 0
+unavailable-subtitle: [? if calm_down_timer > 0: We have to wait [+ calm_down_timer +] months before being able to use this action again. ?]
+on-arrival: calm_down_timer = 6; congress_support += 5 ; psd_relation -=4;  pro_government -= 2;
+
+Although we have gained congressional support, our relations with the PSD and **the people** have deteriorated.
