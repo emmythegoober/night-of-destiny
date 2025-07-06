@@ -192,3 +192,16 @@ Our relations with the Americans [+ american_support : foreign_policy +]
 Our relations with the Soviets [+ soviet_support : foreign_policy +]
 
 Our relations with the rest of Latin America [+ latam_support : foreign_policy +]
+
+@reforms 
+= As Reformas de Base
+
+Educational Reform [+ educational_reform : reforms +]
+
+Fiscal Reform [+ fiscal_reform : reforms +]
+
+Agrarian Reform [+ agrarian_reform : reforms +]
+
+Urban Reform [+ urban_reform : reforms +]
+
+Electoral reform [+ electoral_reform : reforms +]
