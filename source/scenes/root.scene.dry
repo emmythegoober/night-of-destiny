@@ -126,13 +126,12 @@ Q.pro_government = 59;
 // congressional support
 Q.congress_support = 53;
 
+// Reforms
 Q.educational_reform: 0;
 Q.fiscal_reform: 0;
 Q.agrarian_reform: 0;
 Q.electoral_reform: 0;
 Q.urban_reform: 0;
-
-// reforms
 
 
 Q.budget = 4;
